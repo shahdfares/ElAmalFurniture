@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\My Works\\ElAmal\\ElAmal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|d:\\my works\\elamal\\elamal\\elamal\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}",
+      "RelativeMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|solutionrelative:elamal\\docker-compose.yml||{06C066C6-04A2-4E5D-8202-439FD4234EF1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|d:\\my works\\elamal\\elamal\\elamal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|solutionrelative:elamal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|d:\\my works\\elamal\\elamal\\elamal\\dockerfile.dev||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|solutionrelative:elamal\\dockerfile.dev||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|d:\\my works\\elamal\\elamal\\elamal\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|solutionrelative:elamal\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|d:\\my works\\elamal\\elamal\\elamal\\elamal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|solutionrelative:elamal\\elamal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|d:\\my works\\elamal\\elamal\\elamal\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|solutionrelative:elamal\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|d:\\my works\\elamal\\elamal\\.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|solutionrelative:.dockerignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|d:\\my works\\elamal\\elamal\\elamal\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|solutionrelative:elamal\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|d:\\my works\\elamal\\elamal\\elamal\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|solutionrelative:elamal\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": ".env",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\.env",
+              "RelativeDocumentMoniker": "ElAmal\\.env",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\.env",
+              "RelativeToolTip": "ElAmal\\.env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-09T16:42:44.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\appsettings.json",
+              "RelativeDocumentMoniker": "ElAmal\\appsettings.json",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\appsettings.json",
+              "RelativeToolTip": "ElAmal\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-09T16:40:13.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ElAmal",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\ElAmal.csproj",
+              "RelativeDocumentMoniker": "ElAmal\\ElAmal.csproj",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\ElAmal.csproj*",
+              "RelativeToolTip": "ElAmal\\ElAmal.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-09T15:51:02.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dockerfile.dev",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Dockerfile.dev",
+              "RelativeDocumentMoniker": "ElAmal\\Dockerfile.dev",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Dockerfile.dev",
+              "RelativeToolTip": "ElAmal\\Dockerfile.dev",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-09T15:31:33.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": ".dockerignore",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\.dockerignore",
+              "RelativeDocumentMoniker": ".dockerignore",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\.dockerignore",
+              "RelativeToolTip": ".dockerignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-09T15:11:04.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\docker-compose.yml",
+              "RelativeDocumentMoniker": "ElAmal\\docker-compose.yml",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\docker-compose.yml",
+              "RelativeToolTip": "ElAmal\\docker-compose.yml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAAACIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2026-10-09T14:02:43.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Dockerfile",
+              "RelativeDocumentMoniker": "ElAmal\\Dockerfile",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Dockerfile",
+              "RelativeToolTip": "ElAmal\\Dockerfile",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwB0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-09T13:37:37.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "ElAmal\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "ElAmal\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABoAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T13:24:29.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "ElAmal\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "ElAmal\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAA8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-09T13:21:42.123Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\bin\Debug\net9.0\ElAmal.Core.deps.json
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\bin\Debug\net9.0\ElAmal.Core.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\bin\Debug\net9.0\ElAmal.Core.pdb
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\obj\Debug\net9.0\ElAmal.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\obj\Debug\net9.0\ElAmal.Core.AssemblyInfoInputs.cache
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\obj\Debug\net9.0\ElAmal.Core.AssemblyInfo.cs
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\obj\Debug\net9.0\ElAmal.Core.csproj.CoreCompileInputs.cache
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\obj\Debug\net9.0\ElAmal.Core.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\obj\Debug\net9.0\refint\ElAmal.Core.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\obj\Debug\net9.0\ElAmal.Core.pdb
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\obj\Debug\net9.0\ref\ElAmal.Core.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\bin\Debug\net9.0\ElAmal.Shared.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\bin\Debug\net9.0\ElAmal.Shared.pdb
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\obj\Debug\net9.0\ElAmal.Core.csproj.AssemblyReference.cache
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\obj\Debug\net9.0\ElAmal.C.2080D5AC.Up2Date

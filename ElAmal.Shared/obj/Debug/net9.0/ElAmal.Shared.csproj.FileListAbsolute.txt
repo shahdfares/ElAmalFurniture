@@ -1,0 +1,11 @@
+D:\My Works\ElAmal\ElAmal\ElAmal.Shared\bin\Debug\net9.0\ElAmal.Shared.deps.json
+D:\My Works\ElAmal\ElAmal\ElAmal.Shared\bin\Debug\net9.0\ElAmal.Shared.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Shared\bin\Debug\net9.0\ElAmal.Shared.pdb
+D:\My Works\ElAmal\ElAmal\ElAmal.Shared\obj\Debug\net9.0\ElAmal.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Works\ElAmal\ElAmal\ElAmal.Shared\obj\Debug\net9.0\ElAmal.Shared.AssemblyInfoInputs.cache
+D:\My Works\ElAmal\ElAmal\ElAmal.Shared\obj\Debug\net9.0\ElAmal.Shared.AssemblyInfo.cs
+D:\My Works\ElAmal\ElAmal\ElAmal.Shared\obj\Debug\net9.0\ElAmal.Shared.csproj.CoreCompileInputs.cache
+D:\My Works\ElAmal\ElAmal\ElAmal.Shared\obj\Debug\net9.0\ElAmal.Shared.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Shared\obj\Debug\net9.0\refint\ElAmal.Shared.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Shared\obj\Debug\net9.0\ElAmal.Shared.pdb
+D:\My Works\ElAmal\ElAmal\ElAmal.Shared\obj\Debug\net9.0\ref\ElAmal.Shared.dll

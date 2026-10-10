@@ -1,0 +1,41 @@
+services:
+  redis:
+   image: 'redis:latest'
+
+  mssql:
+   image: 'mcr.microsoft.com/mssql/server:2022-latest'
+   environment:
+    - ACCEPT_EULA=Y
+    - MSSQL_SA_PASSWORD=${DB_PASSWORD}
+   volumes:
+    - sql:/var/opt/mssql
+ 
+  api:
+   build:
+    dockerfile: Dockerfile/Dockerfile.dev
+    context: ./ElAmal
+  
+   volumes:
+     - ./ElAmal:/app/ElAmal
+   
+   depends_on:
+     - mssql
+     - redis
+   
+   environment:
+     - REDIS_HOST=redis
+     - REDIS_PORT=6379
+     - ASPNETCORE_ENVIRONMENT=Development
+     - ConnectionStrings__DefaultConnection=Server=mssql;Database=ElAmal;User Id=sa;Password=${DB_PASSWORD};Encrypt=False;TrustServerCertificate=True
+  
+   ports:
+     - 8080:8080
+
+volumes:
+   sql:
+  
+  
+  
+
+     
+  

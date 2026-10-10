@@ -1,0 +1,17 @@
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\bin\Debug\net9.0\ElAmal.Infrastructure.deps.json
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\bin\Debug\net9.0\ElAmal.Infrastructure.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\bin\Debug\net9.0\ElAmal.Infrastructure.pdb
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\obj\Debug\net9.0\ElAmal.Infrastructure.csproj.AssemblyReference.cache
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\obj\Debug\net9.0\ElAmal.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\obj\Debug\net9.0\ElAmal.Infrastructure.AssemblyInfoInputs.cache
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\obj\Debug\net9.0\ElAmal.Infrastructure.AssemblyInfo.cs
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\obj\Debug\net9.0\ElAmal.Infrastructure.csproj.CoreCompileInputs.cache
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\obj\Debug\net9.0\ElAmal.Infrastructure.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\obj\Debug\net9.0\refint\ElAmal.Infrastructure.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\obj\Debug\net9.0\ElAmal.Infrastructure.pdb
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\obj\Debug\net9.0\ref\ElAmal.Infrastructure.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\bin\Debug\net9.0\ElAmal.Core.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\bin\Debug\net9.0\ElAmal.Core.pdb
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\obj\Debug\net9.0\ElAmal.I.BF8636CE.Up2Date
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\bin\Debug\net9.0\ElAmal.Shared.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\bin\Debug\net9.0\ElAmal.Shared.pdb

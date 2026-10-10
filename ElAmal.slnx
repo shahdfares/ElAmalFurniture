@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Dashboard/Dashboard.csproj" />
+  <Project Path="ElAmal.Application/ElAmal.Application.csproj" />
+  <Project Path="ElAmal.Core/ElAmal.Core.csproj" />
+  <Project Path="ElAmal.Infrastructure/ElAmal.Infrastructure.csproj" />
+  <Project Path="ElAmal.Shared/ElAmal.Shared.csproj" />
+  <Project Path="ElAmal/ElAmal.csproj" />
+</Solution>

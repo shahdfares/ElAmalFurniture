@@ -1,0 +1,17 @@
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\bin\Debug\net9.0\ElAmal.Application.deps.json
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\bin\Debug\net9.0\ElAmal.Application.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\bin\Debug\net9.0\ElAmal.Application.pdb
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\obj\Debug\net9.0\ElAmal.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\obj\Debug\net9.0\ElAmal.Application.AssemblyInfoInputs.cache
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\obj\Debug\net9.0\ElAmal.Application.AssemblyInfo.cs
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\obj\Debug\net9.0\ElAmal.Application.csproj.CoreCompileInputs.cache
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\obj\Debug\net9.0\ElAmal.Application.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\obj\Debug\net9.0\refint\ElAmal.Application.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\obj\Debug\net9.0\ElAmal.Application.pdb
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\obj\Debug\net9.0\ref\ElAmal.Application.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\bin\Debug\net9.0\ElAmal.Core.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\bin\Debug\net9.0\ElAmal.Shared.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\bin\Debug\net9.0\ElAmal.Core.pdb
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\bin\Debug\net9.0\ElAmal.Shared.pdb
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\obj\Debug\net9.0\ElAmal.Application.csproj.AssemblyReference.cache
+D:\My Works\ElAmal\ElAmal\ElAmal.Application\obj\Debug\net9.0\ElAmal.A.133CE3B5.Up2Date

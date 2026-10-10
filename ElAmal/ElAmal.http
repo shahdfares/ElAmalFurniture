@@ -1,0 +1,6 @@
+@ElAmal_HostAddress = http://localhost:5177
+
+GET {{ElAmal_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
