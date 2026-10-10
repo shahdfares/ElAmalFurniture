@@ -9,3 +9,4 @@ D:\My Works\ElAmal\ElAmal\ElAmal.Shared\obj\Debug\net9.0\ElAmal.Shared.dll
 D:\My Works\ElAmal\ElAmal\ElAmal.Shared\obj\Debug\net9.0\refint\ElAmal.Shared.dll
 D:\My Works\ElAmal\ElAmal\ElAmal.Shared\obj\Debug\net9.0\ElAmal.Shared.pdb
 D:\My Works\ElAmal\ElAmal\ElAmal.Shared\obj\Debug\net9.0\ref\ElAmal.Shared.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Shared\obj\Debug\net9.0\ElAmal.Shared.sourcelink.json
