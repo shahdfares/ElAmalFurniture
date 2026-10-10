@@ -176,3 +176,4 @@ D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\AutoMapper.dll
 D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\ElAmal.Application.dll
 D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\ElAmal.Application.pdb
+D:\My Works\ElAmal\ElAmal\ElAmal\obj\Debug\net9.0\ElAmal.sourcelink.json

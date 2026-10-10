@@ -13,3 +13,4 @@ D:\My Works\ElAmal\ElAmal\ElAmal.Core\bin\Debug\net9.0\ElAmal.Shared.dll
 D:\My Works\ElAmal\ElAmal\ElAmal.Core\bin\Debug\net9.0\ElAmal.Shared.pdb
 D:\My Works\ElAmal\ElAmal\ElAmal.Core\obj\Debug\net9.0\ElAmal.Core.csproj.AssemblyReference.cache
 D:\My Works\ElAmal\ElAmal\ElAmal.Core\obj\Debug\net9.0\ElAmal.C.2080D5AC.Up2Date
+D:\My Works\ElAmal\ElAmal\ElAmal.Core\obj\Debug\net9.0\ElAmal.Core.sourcelink.json
