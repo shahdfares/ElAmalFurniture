@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "ElAmal.Infrastructure/1.0.0": {
         "dependencies": {
+          "ElAmal.Application": "1.0.0",
           "ElAmal.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.20"
         },
@@ -540,6 +541,17 @@
           }
         }
       },
+      "ElAmal.Application/1.0.0": {
+        "dependencies": {
+          "ElAmal.Core": "1.0.0"
+        },
+        "runtime": {
+          "ElAmal.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "ElAmal.Core/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
@@ -847,6 +859,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "ElAmal.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "ElAmal.Core/1.0.0": {
       "type": "project",

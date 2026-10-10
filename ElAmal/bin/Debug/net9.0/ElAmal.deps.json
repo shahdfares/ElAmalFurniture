@@ -1024,6 +1024,7 @@
       },
       "ElAmal.Infrastructure/1.0.0": {
         "dependencies": {
+          "ElAmal.Application": "1.0.0",
           "ElAmal.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.20"
         },

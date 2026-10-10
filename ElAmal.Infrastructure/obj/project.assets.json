@@ -984,6 +984,19 @@
           }
         }
       },
+      "ElAmal.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "ElAmal.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ElAmal.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ElAmal.Application.dll": {}
+        }
+      },
       "ElAmal.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -2746,6 +2759,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "ElAmal.Application/1.0.0": {
+      "type": "project",
+      "path": "../ElAmal.Application/ElAmal.Application.csproj",
+      "msbuildProject": "../ElAmal.Application/ElAmal.Application.csproj"
+    },
     "ElAmal.Core/1.0.0": {
       "type": "project",
       "path": "../ElAmal.Core/ElAmal.Core.csproj",
@@ -2759,6 +2777,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "ElAmal.Application >= 1.0.0",
       "ElAmal.Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.20"
     ]
@@ -2795,6 +2814,9 @@
           "framework": "net9.0",
           "targetAlias": "net9.0",
           "projectReferences": {
+            "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\ElAmal.Application.csproj": {
+              "projectPath": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\ElAmal.Application.csproj"
+            },
             "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\ElAmal.Core.csproj": {
               "projectPath": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\ElAmal.Core.csproj"
             }

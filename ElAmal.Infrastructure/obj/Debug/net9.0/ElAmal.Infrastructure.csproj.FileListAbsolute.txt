@@ -16,3 +16,5 @@ D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\obj\Debug\net9.0\ElAmal.I.BF8636
 D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\bin\Debug\net9.0\ElAmal.Shared.dll
 D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\bin\Debug\net9.0\ElAmal.Shared.pdb
 D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\obj\Debug\net9.0\ElAmal.Infrastructure.sourcelink.json
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\bin\Debug\net9.0\ElAmal.Application.dll
+D:\My Works\ElAmal\ElAmal\ElAmal.Infrastructure\bin\Debug\net9.0\ElAmal.Application.pdb

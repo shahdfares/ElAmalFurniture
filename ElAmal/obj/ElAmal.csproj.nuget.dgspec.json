@@ -206,6 +206,9 @@
             "framework": "net9.0",
             "targetAlias": "net9.0",
             "projectReferences": {
+              "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\ElAmal.Application.csproj": {
+                "projectPath": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\ElAmal.Application.csproj"
+              },
               "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\ElAmal.Core.csproj": {
                 "projectPath": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\ElAmal.Core.csproj"
               }
