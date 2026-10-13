@@ -40,7 +40,7 @@ namespace Dashboard.Controllers
             var addedCategory = await _categoryServices.AddAsync(categoryDto);
 
             if (addedCategory is null)
-                return NotFound(new ApiResponse(404, "No Categoryo Found"));
+                return NotFound(new ApiResponse(404, "No Category Found"));
 
             return Ok(addedCategory);
         }
@@ -58,7 +58,7 @@ namespace Dashboard.Controllers
 
          
              if (updatedCategory is null)
-                 return NotFound(new ApiResponse(404, "No Categoryo Found"));
+                 return NotFound(new ApiResponse(404, "No Category Found"));
 
 
             return Ok(updatedCategory);

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ElAmal.Shared.DTOs.TechnicalSpecification
 {
+    //For Product
     public class TechnicalSpecificationResponse
     {
         public Guid Id { get; set; }

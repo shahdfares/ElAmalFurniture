@@ -27,6 +27,11 @@ namespace ElAmal.Core.Helper
             CreateMap<ProductCategory, CategoryResponseDto>();
 
             CreateMap<CategoryRequestDto, ProductCategory>();
+            
+            CreateMap<SpecificationProperty, TechniacalSpecResponseDto>();
+
+            CreateMap<TechniacalSpecResponseDto, SpecificationProperty>();
+
 
         }
     }

@@ -5,6 +5,8 @@ using ElAmal.Core.Contract.Repository;
 using ElAmal.Core.Contract.Services.Attachment;
 using ElAmal.Core.Contract.Services.Category;
 using ElAmal.Core.Contract.Services.Products;
+using ElAmal.Core.Contract.Services.SpecProperty;
+using ElAmal.Core.Contract.Services.TechnicalSpecification;
 using ElAmal.Core.Entities.Products.Attachments;
 using ElAmal.Core.Helper;
 using ElAmal.Infrastructure.Data;
@@ -41,6 +43,7 @@ namespace ElAmal.Shared.Extenssion
             services.AddScoped<IProductServices, ProductServices>();
             services.AddScoped<ICategoryServices, CategoryServices>();
             services.AddScoped<IAttachmentServices, AttachmentServices>();
+            services.AddScoped<ISpecificatonPropertyServices, SpecificatonPropertyServices>();
 
             return services;
         }
