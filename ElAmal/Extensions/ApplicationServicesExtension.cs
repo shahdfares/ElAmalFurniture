@@ -1,13 +1,6 @@
-﻿using ElAmal.Application.Services.Category;
-using ElAmal.Application.Services.products;
-using ElAmal.Core.Contract.Repository;
-using ElAmal.Core.Contract.Services.Category;
-using ElAmal.Core.Contract.Services.Products;
-using ElAmal.Core.Helper;
-using ElAmal.Infrastructure.Data;
-using ElAmal.Shared.Errors;
+﻿using ElAmal.Shared.Errors;
+using ElAmal.Shared.Extenssion;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 namespace ElAmal.Extensions
@@ -19,9 +12,8 @@ namespace ElAmal.Extensions
             services.AddBuiltInServices();
             services.AddSwaggerServices();
             services.AddValidationErrorHandling();
-            services.AddDbContextServices(configuration);
-            services.AddUserDefinedService();
-            services.AddAutomapperServices();
+
+            services.AddSahredDIServices(configuration);
 
             return services;
         }
@@ -100,29 +92,5 @@ namespace ElAmal.Extensions
             return services;
         }
 
-        private static IServiceCollection AddDbContextServices(this IServiceCollection services, IConfiguration configuration)
-        {
-            services.AddDbContext<ElAmalDbContext>(options =>
-            options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
-
-            return services;
-        }
-
-        private static IServiceCollection AddUserDefinedService(this IServiceCollection services)
-        {
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
-            services.AddScoped<IElAmalContextInitializer, ElAmalContextInitializer>();
-            services.AddScoped<IProductServices, ProductServices>();
-            services.AddScoped<ICategoryServices, CategoryServices>();
-
-            return services;
-        }
-
-        private static IServiceCollection AddAutomapperServices(this IServiceCollection services)
-        {
-            services.AddAutoMapper(typeof(MappingProfile));
-
-            return services;
-        }
     }
 }

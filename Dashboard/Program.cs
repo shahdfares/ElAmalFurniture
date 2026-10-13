@@ -1,32 +1,35 @@
 
+using Dashboard.Extenssion;
+using ElAmal.Extensions;
+
 namespace Dashboard
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
-            var builder = WebApplication.CreateBuilder(args);
+            var webApplicationBuilder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-
-            builder.Services.AddControllers();
-            // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-            builder.Services.AddOpenApi();
-
-            var app = builder.Build();
-
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
-                app.MapOpenApi();
-            }
-
-            app.UseHttpsRedirection();
-
-            app.UseAuthorization();
+            #region Services Configurations
 
 
-            app.MapControllers();
+            webApplicationBuilder.Services.AddDashboardService(webApplicationBuilder.Configuration);
+
+            #endregion
+
+            var app = webApplicationBuilder.Build();
+
+            #region Database Initialization
+
+            await app.InitializerElAmalContextAsync();
+
+            #endregion
+
+            #region Kestrel Configurations
+
+            app.MiddlewareConfigurations();
+
+            #endregion
 
             app.Run();
         }

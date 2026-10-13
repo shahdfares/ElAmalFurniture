@@ -7,23 +7,23 @@ namespace ElAmal.Core.Specifications
         where TKey : IEquatable<TKey>
     {
         public Expression<Func<TEntity, bool>>? Criteria { get; set; } = null!;
-        public List<Expression<Func<TEntity, object>>> Include { get; set; } = new List<Expression<Func<TEntity, object>>>();
         public int Skip { get; set; }
         public int Take { get; set; }
         public bool isPagenation { get; set; }
         public Expression<Func<TEntity, object>> OrderBy { get ; set; }
         public Expression<Func<TEntity, object>> OrderByDesc { get; set; }
+        public List<Func<IQueryable<TEntity>, IQueryable<TEntity>>> Include { get; set; } = new();
 
         public BaseSpecification(Expression<Func<TEntity, bool>>? criteria)
         {
             Criteria = criteria;
-           // Include Initialization
+           //Include Initialization
         }
 
         public BaseSpecification()
         {
-             // Set Criteria null
-            // Include Initialization
+             //Set Criteria null
+            //Include Initialization
         }
 
         public void AddOrderBy(Expression<Func<TEntity, object>> orderByExpression)
@@ -33,7 +33,7 @@ namespace ElAmal.Core.Specifications
 
         public void AddOrderByDesc(Expression<Func<TEntity, object>> orderByDescExpression)
         {
-            OrderBy = orderByDescExpression;
+            OrderByDesc = orderByDescExpression;
         }
 
         public void ApplyPagenation(int skip, int take)

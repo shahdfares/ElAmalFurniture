@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElAmal.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(ElAmalDbContext))]
-    [Migration("20261009100549_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20261013093529_initialMigration")]
+    partial class initialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -145,6 +145,7 @@ namespace ElAmal.Infrastructure.Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Value")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("ProductId", "SpecificationPropertiesId");

@@ -1,4 +1,5 @@
 ﻿using ElAmal.Core.Entities.Products;
+using Microsoft.EntityFrameworkCore;
 
 namespace ElAmal.Core.Specifications.ProductSpecs
 {
@@ -48,9 +49,10 @@ namespace ElAmal.Core.Specifications.ProductSpecs
             
         }
 
-        private  void ApplyInclude()
+        private void ApplyInclude()
         {
-            Include.Add(p => p.Category!);
+            Include.Add(query => query
+                      .Include(c => c.Category));
         }
 
     }

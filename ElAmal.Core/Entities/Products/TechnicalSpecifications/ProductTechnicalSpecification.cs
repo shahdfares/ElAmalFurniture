@@ -8,7 +8,7 @@ namespace ElAmal.Core.Entities.Products.TechnicalSpecifications
 {
     public class ProductTechnicalSpecification : BaseEntity<Guid>
     {
-        public string? Value { get; set; }
+        public string Value { get; set; } = null!;
 
         // Navigational propety 
         public Guid SpecificationPropertiesId { get; set; }

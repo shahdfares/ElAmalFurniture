@@ -177,3 +177,5 @@ D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\AutoMapper.Extensions.Microsof
 D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\ElAmal.Application.dll
 D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\ElAmal.Application.pdb
 D:\My Works\ElAmal\ElAmal\ElAmal\obj\Debug\net9.0\ElAmal.sourcelink.json
+D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\CloudinaryDotNet.dll
+D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\Newtonsoft.Json.dll

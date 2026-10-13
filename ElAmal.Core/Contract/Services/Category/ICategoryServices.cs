@@ -1,15 +1,15 @@
-﻿using ElAmal.Core.Entities.Products.Category;
+﻿using ElAmal.Core.Helper;
 using ElAmal.Shared.DTOs.Category;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ElAmal.Core.Contract.Services.Category
 {
     public interface ICategoryServices
     {
         Task<IReadOnlyList<CategoryResponseDto>> GetAllAsync();
+
+        // For Dashboard
+        Task<ReturnResult<CategoryResponseDto>> AddAsync(CategoryRequestDto categoryRequestDto);
+        Task<ReturnResult<CategoryResponseDto>> UpdateAsync(CategoryRequestDto categoryDto);
+        Task<ReturnResult<CategoryResponseDto>> DeleteAsync(Guid? Id);
     }
 }
