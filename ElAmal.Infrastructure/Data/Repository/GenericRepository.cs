@@ -2,6 +2,7 @@
 using ElAmal.Core.Entities;
 using ElAmal.Core.Specifications;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace ElAmal.Infrastructure.Data.Repository
 {
@@ -32,9 +33,10 @@ namespace ElAmal.Infrastructure.Data.Repository
         public async Task<int> GetCount(ISpecification<TEntity, TKey> spec)
            => await ApplySpecification(spec).CountAsync();
 
-        private IQueryable<TEntity> ApplySpecification(ISpecification<TEntity, TKey> spec)
-        
+        private IQueryable<TEntity> ApplySpecification(ISpecification<TEntity, TKey> spec)      
            =>  SpecificationEvaluator<TEntity, TKey>.GetQuery(_dbContext.Set<TEntity>(), spec);
-        
+
+        public async Task<bool> ExistsAsync(Expression<Func<TEntity, bool>> expression)
+          => await _dbContext.Set<TEntity>().AnyAsync(expression);
     }
 }

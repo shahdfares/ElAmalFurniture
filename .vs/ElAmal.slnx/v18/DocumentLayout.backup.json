@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "D:\\My Works\\ElAmal\\ElAmal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|d:\\my works\\elamal\\elamal\\dashboard\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|d:\\my works\\elamal\\elamal\\elamal\\extensions\\applicationservicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|solutionrelative:elamal\\extensions\\applicationservicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|d:\\my works\\elamal\\elamal\\dashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|d:\\my works\\elamal\\elamal\\dashboard\\extenssion\\dashboardserviceextenssion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\extenssion\\dashboardserviceextenssion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8B0D95EC-839B-B92E-0A04-52DD5D8AE88F}|ElAmal.Infrastructure\\ElAmal.Infrastructure.csproj|d:\\my works\\elamal\\elamal\\elamal.infrastructure\\data\\specificationevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0D95EC-839B-B92E-0A04-52DD5D8AE88F}|ElAmal.Infrastructure\\ElAmal.Infrastructure.csproj|solutionrelative:elamal.infrastructure\\data\\specificationevaluator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8B0D95EC-839B-B92E-0A04-52DD5D8AE88F}|ElAmal.Infrastructure\\ElAmal.Infrastructure.csproj|d:\\my works\\elamal\\elamal\\elamal.infrastructure\\extenssion\\sahreddiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,73 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationServicesExtension.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Extensions\\ApplicationServicesExtension.cs",
-              "RelativeDocumentMoniker": "ElAmal\\Extensions\\ApplicationServicesExtension.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Extensions\\ApplicationServicesExtension.cs",
-              "RelativeToolTip": "ElAmal\\Extensions\\ApplicationServicesExtension.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-10T13:07:45.158Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\Program.cs",
-              "RelativeDocumentMoniker": "Dashboard\\Program.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\Program.cs",
-              "RelativeToolTip": "Dashboard\\Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA4AAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-10T13:03:59.261Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Dashboard\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Dashboard\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAuwCIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-10T14:01:22.64Z",
+              "Title": "SpecificationEvaluator.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Data\\SpecificationEvaluator.cs",
+              "RelativeDocumentMoniker": "ElAmal.Infrastructure\\Data\\SpecificationEvaluator.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Data\\SpecificationEvaluator.cs",
+              "RelativeToolTip": "ElAmal.Infrastructure\\Data\\SpecificationEvaluator.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAhwCIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T08:11:11.143Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "SahredDIServices.cs",
               "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Extenssion\\SahredDIServices.cs",
               "RelativeDocumentMoniker": "ElAmal.Infrastructure\\Extenssion\\SahredDIServices.cs",
               "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Extenssion\\SahredDIServices.cs",
               "RelativeToolTip": "ElAmal.Infrastructure\\Extenssion\\SahredDIServices.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAA8AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACkAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-10T13:50:16.059Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DashboardServiceExtenssion.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\Extenssion\\DashboardServiceExtenssion.cs",
-              "RelativeDocumentMoniker": "Dashboard\\Extenssion\\DashboardServiceExtenssion.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\Extenssion\\DashboardServiceExtenssion.cs",
-              "RelativeToolTip": "Dashboard\\Extenssion\\DashboardServiceExtenssion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-10T13:08:09.617Z",
+              "WhenOpened": "2026-10-13T08:10:43.459Z",
               "EditorCaption": ""
             }
           ]

@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ElAmal.Application\ElAmal.Application.csproj" />
     <ProjectReference Include="..\ElAmal.Infrastructure\ElAmal.Infrastructure.csproj" />
     <ProjectReference Include="..\ElAmal.Shared\ElAmal.Shared.csproj" />
   </ItemGroup>

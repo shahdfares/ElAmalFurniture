@@ -27,7 +27,7 @@ namespace ElAmal.Infrastructure.Data
 
 
             // Include 
-            query = spec.Include.Aggregate(query, (currentQuery, inputExpression) => currentQuery.Include(inputExpression));
+            query = spec.Include.Aggregate(query, (currentQuery, inputExpression) => inputExpression(currentQuery));
 
 
 

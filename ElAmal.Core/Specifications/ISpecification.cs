@@ -7,7 +7,7 @@ namespace ElAmal.Core.Specifications
         where TKey : IEquatable<TKey>
     {
         public Expression<Func<TEntity, bool>>? Criteria { get; set; }
-        public List<Expression<Func<TEntity, object>>> Include { get; set; }
+        public List<Func<IQueryable<TEntity>, IQueryable<TEntity>>> Include { get; set; }
         public Expression<Func<TEntity, object>> OrderBy { get; set; }
         public Expression<Func<TEntity, object>> OrderByDesc { get; set; }
         public int Skip { get; set; }

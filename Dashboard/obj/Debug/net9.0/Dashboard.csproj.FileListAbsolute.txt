@@ -95,3 +95,5 @@ D:\My Works\ElAmal\ElAmal\Dashboard\bin\Debug\net9.0\ElAmal.Infrastructure.dll
 D:\My Works\ElAmal\ElAmal\Dashboard\bin\Debug\net9.0\ElAmal.Infrastructure.pdb
 D:\My Works\ElAmal\ElAmal\Dashboard\bin\Debug\net9.0\ElAmal.Application.pdb
 D:\My Works\ElAmal\ElAmal\Dashboard\bin\Debug\net9.0\ElAmal.Core.pdb
+D:\My Works\ElAmal\ElAmal\Dashboard\bin\Debug\net9.0\CloudinaryDotNet.dll
+D:\My Works\ElAmal\ElAmal\Dashboard\bin\Debug\net9.0\Newtonsoft.Json.dll
