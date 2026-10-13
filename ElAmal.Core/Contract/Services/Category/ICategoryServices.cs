@@ -9,7 +9,7 @@ namespace ElAmal.Core.Contract.Services.Category
 
         // For Dashboard
         Task<ReturnResult<CategoryResponseDto>> AddAsync(CategoryRequestDto categoryRequestDto);
-        Task<ReturnResult<CategoryResponseDto>> UpdateAsync(CategoryRequestDto categoryDto);
+        Task<ReturnResult<CategoryResponseDto>> UpdateAsync(Guid id, CategoryRequestDto categoryDto);
         Task<ReturnResult<CategoryResponseDto>> DeleteAsync(Guid? Id);
     }
 }

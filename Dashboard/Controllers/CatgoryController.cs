@@ -48,13 +48,13 @@ namespace Dashboard.Controllers
         [ProducesResponseType(typeof(ActionResult<CategoryResponseDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
-        [HttpPut]
-        public async Task<ActionResult<ReturnResult<CategoryResponseDto>>> Update([FromQuery]CategoryRequestDto categoryDto)
+        [HttpPut("{id:guid}")]
+        public async Task<ActionResult<ReturnResult<CategoryResponseDto>>> Update(Guid id,CategoryRequestDto categoryDto)
         {
             if (categoryDto is null)
                 return BadRequest(new ApiResponse(404, "Category name is required"));
 
-            var updatedCategory = await _categoryServices.UpdateAsync(categoryDto);
+            var updatedCategory = await _categoryServices.UpdateAsync(id, categoryDto);
 
          
              if (updatedCategory is null)
@@ -67,7 +67,7 @@ namespace Dashboard.Controllers
 
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
-        [HttpDelete]
+        [HttpDelete("{id:guid}")]
         public async Task<ActionResult<CategoryResponseDto>> Delete(Guid id)
         {
             if (id == Guid.Empty)

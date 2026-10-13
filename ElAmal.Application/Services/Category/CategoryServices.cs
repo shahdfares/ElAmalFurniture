@@ -5,9 +5,7 @@ using ElAmal.Core.Contract.Services.Category;
 using ElAmal.Core.Entities.Products.Category;
 using ElAmal.Core.Helper;
 using ElAmal.Core.Specifications.CategorySpecs;
-using ElAmal.Core.Specifications.ProductSpecs;
 using ElAmal.Shared.DTOs.Category;
-using System.ComponentModel;
 
 namespace ElAmal.Application.Services.Category
 {
@@ -64,13 +62,13 @@ namespace ElAmal.Application.Services.Category
 
         }
 
-        public async Task<ReturnResult<CategoryResponseDto>> UpdateAsync(CategoryRequestDto categoryDto)
+        public async Task<ReturnResult<CategoryResponseDto>> UpdateAsync(Guid id , CategoryRequestDto categoryDto)
         {
             //Vlaidation
-            if (categoryDto is null)
+            if (categoryDto is null && id == Guid.Empty)
                 return ReturnResult<CategoryResponseDto>.Fail("Invalid Request");
 
-            if (string.IsNullOrWhiteSpace(categoryDto.Name))
+            if (string.IsNullOrWhiteSpace(categoryDto!.Name))
                 return ReturnResult<CategoryResponseDto>.Fail("Name is requird");
 
             //Clean
@@ -87,9 +85,12 @@ namespace ElAmal.Application.Services.Category
             if (checkOnNameAndSlug)
                 return ReturnResult<CategoryResponseDto>.Fail("Name and Slug are exsit");
 
-            //Map
-            var category = _mapper.Map<ProductCategory>(categoryDto.Name);
+            var category = await _unitOfWork.GetRepository<ProductCategory, Guid>().GetEntityAync(id);
 
+            if(category is null)
+                return ReturnResult<CategoryResponseDto>.Fail("Category not found");
+
+            category.Name = categoryDto.Name;
             category.Slug = slug;
 
             //Update 
