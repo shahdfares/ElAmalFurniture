@@ -33,7 +33,7 @@ namespace ElAmal.Core.Contract.Services.TechnicalSpecification
 
         public  async Task<ReturnResult<TechniacalSpecResponseDto>> AddAsync(TechniacalSpecRequestDto responseDto)
         {
-            if (responseDto is not null)
+            if (responseDto is  null)
                 return ReturnResult<TechniacalSpecResponseDto>.Fail("Invalid Request");
 
             if(string.IsNullOrWhiteSpace(responseDto!.Name))

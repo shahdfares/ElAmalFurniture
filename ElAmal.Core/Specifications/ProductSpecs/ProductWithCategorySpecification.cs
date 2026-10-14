@@ -46,7 +46,7 @@ namespace ElAmal.Core.Specifications.ProductSpecs
         public ProductWithCategorySpecification(string categorySlug, string productSlug) :
             base(P => P.Slug == productSlug && P.Category!.Slug == categorySlug)
         {
-            
+            ApplyInclude();
         }
 
         public ProductWithCategorySpecification(Guid? id) : base(p => p.Id == id)
@@ -57,6 +57,13 @@ namespace ElAmal.Core.Specifications.ProductSpecs
         {
             Include.Add(query => query
                       .Include(c => c.Category));
+
+            Include.Add(query => query
+                      .Include(c => c.ProductImages));
+
+            Include.Add(query => query
+                      .Include(c => c.ProductTechnicalSpecifications!)
+                      .ThenInclude( c => c.SpecificationProperties));
         }
 
     }

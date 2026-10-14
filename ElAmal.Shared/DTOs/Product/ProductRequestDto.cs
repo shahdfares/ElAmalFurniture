@@ -11,7 +11,7 @@ namespace ElAmal.Shared.DTOs.Product
     public class ProductRequestDto
     {
         //Basic Information
-        public string Name { get; set; } = null!;
+        public string? Name { get; set; } = null!;
         public string? Code { get; set; }
         public string? Descripton { get; set; }
         public Guid? CategoryId { get; set; }

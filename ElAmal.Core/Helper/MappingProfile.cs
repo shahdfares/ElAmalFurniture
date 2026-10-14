@@ -16,8 +16,9 @@ namespace ElAmal.Core.Helper
         {
 
             CreateMap<Product, ProductToReturnDto>()
-                .ForMember(d => d.Name, o => o.MapFrom(s => s.Category!.Name))
-                .ForMember(d => d.CategorySlug, o => o.MapFrom(s => s.Category!.Slug));
+                .ForMember(d => d.Category, o => o.MapFrom(s => s.Category!.Name))
+                .ForMember(d => d.CategorySlug, o => o.MapFrom(s => s.Category!.Slug))
+                 .ForMember(d => d.TechnicalSpecification, o => o.MapFrom(s => s.ProductTechnicalSpecifications)); ;
 
             CreateMap<ProductImages, ImageResponseDto>();
 
@@ -27,10 +28,15 @@ namespace ElAmal.Core.Helper
             CreateMap<ProductCategory, CategoryResponseDto>();
 
             CreateMap<CategoryRequestDto, ProductCategory>();
-            
-            CreateMap<SpecificationProperty, TechniacalSpecResponseDto>();
 
-            CreateMap<TechniacalSpecResponseDto, SpecificationProperty>();
+            CreateMap<SpecificationProperty, TechniacalSpecResponseDto>();            
+
+            CreateMap<TechniacalSpecRequestDto, SpecificationProperty>();
+           
+            CreateMap<ProductRequestDto, Product>();
+
+            CreateMap<ProductTechnicalSpecification, TechnicalSpecificationResponse>()
+                .ForMember(d => d.Name, o => o.MapFrom(s => s.SpecificationProperties!.Name));
 
 
         }

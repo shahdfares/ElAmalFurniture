@@ -99,10 +99,8 @@ namespace ElAmal.Application.Services.products
             
             #region Check Name Duplication
 
-            var slug = GenerateSlug.Generate(productRequestDto.Name);
-
             var check = await _unitOfWork.GetRepository<Product, Guid>()
-                .ExistsAsync(p => p.Name.ToLower() == productRequestDto.Name.ToLower() && p.Slug == slug);
+                .ExistsAsync(p => p.Name.ToLower() == productRequestDto.Name.ToLower());
 
             if (check) // True
                 return ReturnResult<ProductToReturnDto>.Fail("Name and slug already exsits");
@@ -135,7 +133,21 @@ namespace ElAmal.Application.Services.products
 
             var product = _mapper.Map<Product>(productRequestDto);
 
-            product.Slug = slug;
+            product.Slug = GenerateSlug.Generate(productRequestDto.Name);
+
+            #endregion
+
+            #region Add Technical Specifications
+
+            foreach (var item in productRequestDto.technicalSpecificationRequests)
+            {
+                product.ProductTechnicalSpecifications!.Add(
+                    new ProductTechnicalSpecification
+                    {
+                        SpecificationPropertiesId = item.TechnicalSpecificationId,
+                        Value = item.Value
+                    });
+            }
 
             #endregion
 
@@ -177,7 +189,7 @@ namespace ElAmal.Application.Services.products
 
                 #endregion
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 #region Delete Uploaded Images
 
@@ -186,35 +198,45 @@ namespace ElAmal.Application.Services.products
 
                 #endregion
 
-               return ReturnResult<ProductToReturnDto>.Fail("Failed to create product.");
+                foreach (var image in uploadedImages)
+                    await _attachmentServices.DeleteAsync(image.PublicId);
 
-               // return ReturnResult<ProductToReturnDto>.Fail(ex.ToString());
+                return ReturnResult<ProductToReturnDto>.Fail(ex.Message);
             }
 
             #endregion
 
-            var response = _mapper.Map<ProductToReturnDto>(product);
+            var savedProduct = await _unitOfWork.GetRepository<Product, Guid>()
+                .GetEntityWithSpecAync(new ProductWithCategorySpecification(product.Id));
 
-            return ReturnResult<ProductToReturnDto>.Success(response, "Product added successfully.");
+            if (savedProduct is null)
+                return ReturnResult<ProductToReturnDto>
+                    .Fail("Product was added, but could not be retrieved.");
+
+            var response = _mapper.Map<ProductToReturnDto>(savedProduct);
+
+            return ReturnResult<ProductToReturnDto>
+                .Success(response, "Product added successfully.");
         }
 
         public async Task<ReturnResult<ProductToReturnDto>> UpdateAsync(Guid id, ProductRequestDto productRequestDto)
         {
             #region Validation
 
+            if (id == Guid.Empty)
+                return ReturnResult<ProductToReturnDto>.Fail("Invalid product id.");
+
             if (productRequestDto is null)
-                return ReturnResult<ProductToReturnDto>.Fail("Invalid request");
+                return ReturnResult<ProductToReturnDto>.Fail("Invalid request.");
 
             if (string.IsNullOrWhiteSpace(productRequestDto.Name))
-                return ReturnResult<ProductToReturnDto>.Fail("Name is required");
+                return ReturnResult<ProductToReturnDto>.Fail("Product name is required");
+
+            if (productRequestDto.CategoryId.HasValue && productRequestDto.CategoryId == Guid.Empty)
+                return ReturnResult<ProductToReturnDto>.Fail("Invalid category id");
 
             productRequestDto.Name = productRequestDto.Name.Trim();
 
-            if (!productRequestDto.CategoryId.HasValue || productRequestDto.CategoryId == Guid.Empty)
-                return ReturnResult<ProductToReturnDto>.Fail("Category is required.");
-
-            if (productRequestDto.Images is null || !productRequestDto.Images.Any())
-                return ReturnResult<ProductToReturnDto>.Fail("At least one product image is required.");
 
             #endregion
 
@@ -227,23 +249,41 @@ namespace ElAmal.Application.Services.products
                 .GetEntityWithSpecAync(spec);
 
             if (product is null)
-                return ReturnResult<ProductToReturnDto>.Fail("Product not found.");
+                return ReturnResult<ProductToReturnDto>.Fail("Product not found");
 
             if (product.CategoryId != productRequestDto.CategoryId)
                 return ReturnResult<ProductToReturnDto>.Fail("CategoryId does not match");
 
             #endregion
 
+          
             #region Check Duplicate Name
 
-            var existingProduct = await _unitOfWork
-                .GetRepository<Product, Guid>()
-                .ExistsAsync(p => p.Name.ToLower() == productRequestDto.Name.ToLower());
+             var newName = productRequestDto.Name.Trim();
 
-            if (existingProduct)
-                return ReturnResult<ProductToReturnDto>.Fail("Name already exsits");
+            if (!string.Equals(
+                    product.Name,
+                    newName,
+                    StringComparison.OrdinalIgnoreCase))
+            {
+                var existingProduct = await _unitOfWork
+                    .GetRepository<Product, Guid>()
+                    .ExistsAsync(p =>
+                        p.Name.ToLower() == newName.ToLower()
+                        && p.Id != product.Id);
+
+                if (existingProduct)
+                {
+                    return ReturnResult<ProductToReturnDto>
+                        .Fail("Name already exists.");
+                }
+
+                product.Name = newName;
+                product.Slug = GenerateSlug.Generate(newName);
+            }
 
             #endregion
+
 
             #region Update Specifiaction Property
 
@@ -313,6 +353,8 @@ namespace ElAmal.Application.Services.products
                         });
                     }
                 }
+
+                 _mapper.Map(productRequestDto, product);
 
                 #region Save Product
 

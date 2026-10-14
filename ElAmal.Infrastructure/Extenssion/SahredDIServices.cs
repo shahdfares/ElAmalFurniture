@@ -55,6 +55,8 @@ namespace ElAmal.Shared.Extenssion
         }
         private static IServiceCollection AddAttachmentServices(this IServiceCollection services, IConfiguration configuration)
         {
+            services.Configure<AttachmentSettings>(configuration.GetSection("AttachmentSettings"));
+
             services.Configure<CloudinarySettings>(configuration.GetSection("CloudinarySettings"));
 
             return services;

@@ -32,29 +32,24 @@ namespace ElAmal.Application.Services.Category
 
             categoryRequestDto.Name = categoryRequestDto.Name.Trim();
 
+            //Check if the name is exist before 
+            var checkOnName = await _unitOfWork.GetRepository<ProductCategory, Guid>().
+                ExistsAsync(n => n.Name.ToLower() == categoryRequestDto.Name.ToLower());
 
-            //Generate Slug
-            var slug = GenerateSlug.Generate(categoryRequestDto.Name);
+            if(checkOnName)
+                return ReturnResult<CategoryResponseDto>.Fail("Name are alraedy exsit");
 
-            //Check if the name and slug is exist before 
-            var checkOnNameAndSlug = await _unitOfWork.GetRepository<ProductCategory, Guid>().
-                ExistsAsync(n => n.Name == categoryRequestDto.Name &&
-                            n.Slug == slug);
-
-            if(checkOnNameAndSlug)
-                return ReturnResult<CategoryResponseDto>.Fail("Name and Slug are alraedy exsit");
 
             //Mapping 
             var category = _mapper.Map<ProductCategory>(categoryRequestDto);
 
-            category.Slug = slug;
+            category.Slug = GenerateSlug.Generate(categoryRequestDto.Name); 
 
             //Add
             await _unitOfWork.GetRepository<ProductCategory, Guid>().AddAsync(category);
 
             //Save
             await _unitOfWork.CompleteAsync();
-
 
             return ReturnResult<CategoryResponseDto>.Success(
                 _mapper.Map<CategoryResponseDto>(category),
@@ -74,16 +69,13 @@ namespace ElAmal.Application.Services.Category
             //Clean
             categoryDto.Name = categoryDto.Name.Trim();
 
-            //Generate Slug
-            var slug = GenerateSlug.Generate(categoryDto.Name);
-
             //Check on Name and Slug
-            var checkOnNameAndSlug = await _unitOfWork.GetRepository<ProductCategory, Guid>()
-                .ExistsAsync(c => c.Name == categoryDto.Name &&
-                             c.Slug == slug);
+            var checkOnName = await _unitOfWork.GetRepository<ProductCategory, Guid>()
+                .ExistsAsync(c => c.Name.ToLower() == categoryDto.Name.ToLower());
+                             
 
-            if (checkOnNameAndSlug)
-                return ReturnResult<CategoryResponseDto>.Fail("Name and Slug are exsit");
+            if (checkOnName)
+                return ReturnResult<CategoryResponseDto>.Fail("Name are exsit");
 
             var category = await _unitOfWork.GetRepository<ProductCategory, Guid>().GetEntityAync(id);
 
@@ -91,10 +83,10 @@ namespace ElAmal.Application.Services.Category
                 return ReturnResult<CategoryResponseDto>.Fail("Category not found");
 
             category.Name = categoryDto.Name;
-            category.Slug = slug;
+            category.Slug = GenerateSlug.Generate(categoryDto.Name);
 
             //Update 
-             _unitOfWork.GetRepository<ProductCategory, Guid>().Update(category);
+            _unitOfWork.GetRepository<ProductCategory, Guid>().Update(category);
 
             //Save Changes
              await _unitOfWork.CompleteAsync();
@@ -132,6 +124,8 @@ namespace ElAmal.Application.Services.Category
             }
 
             _unitOfWork.GetRepository<ProductCategory, Guid>().Delete(category);
+
+            await _unitOfWork.CompleteAsync();
 
             return ReturnResult<CategoryResponseDto>.Success(
                 _mapper.Map<CategoryResponseDto>(category),

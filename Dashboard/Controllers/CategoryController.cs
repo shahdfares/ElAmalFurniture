@@ -1,4 +1,5 @@
-﻿using ElAmal.Core.Contract.Services.Category;
+﻿using CloudinaryDotNet.Actions;
+using ElAmal.Core.Contract.Services.Category;
 using ElAmal.Core.Helper;
 using ElAmal.Shared.DTOs.Category;
 using ElAmal.Shared.Errors;
@@ -6,11 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Dashboard.Controllers
 {
-    public class CatgoryController : BaseController
+    public class CategoryController : BaseController
     {
         private readonly ICategoryServices _categoryServices;
 
-        public CatgoryController(ICategoryServices categoryServices)
+        public CategoryController(ICategoryServices categoryServices)
         {
            _categoryServices = categoryServices;
         }
@@ -30,17 +31,16 @@ namespace Dashboard.Controllers
 
         [ProducesResponseType(typeof(ActionResult<CategoryResponseDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
         [HttpPost]
-        public async Task<ActionResult<CategoryResponseDto>> Add([FromQuery]CategoryRequestDto categoryDto)
+        public async Task<ActionResult<CategoryResponseDto>> Add([FromBody]CategoryRequestDto categoryDto)
         {
             if (categoryDto is null)
                 return BadRequest(new ApiResponse(400, "Invalid Request"));
 
             var addedCategory = await _categoryServices.AddAsync(categoryDto);
 
-            if (addedCategory is null)
-                return NotFound(new ApiResponse(404, "No Category Found"));
+            if (!addedCategory.IsSuccess)
+                return BadRequest(addedCategory);
 
             return Ok(addedCategory);
         }

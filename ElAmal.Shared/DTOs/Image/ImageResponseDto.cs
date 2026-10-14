@@ -9,7 +9,7 @@ namespace ElAmal.Shared.DTOs.Image
     public class ImageResponseDto
     {
         public Guid Id { get; set; }
-        public string ImageUrl { get; set; } = null!;
+        public string ImagesUrl { get; set; } = null!;
         public bool IsPrimary { get; set; }
     }
 }

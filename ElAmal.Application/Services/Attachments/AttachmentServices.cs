@@ -38,21 +38,21 @@ namespace ElAmal.Application.Services.Attachments
             if (file.Length > _attachmentSettings.MaxImageSize)
                 return null;
 
-             await using var stream = file.OpenReadStream();
+            await using var stream = file.OpenReadStream();
 
             var uploadParams = new ImageUploadParams
             {
-                File = new FileDescription(file.Name, stream),
+                File = new FileDescription(file.FileName, stream),
                 Folder = folderName,
-                Overwrite=true,
-                UseFilename=true,
-                UniqueFilename=false
+                UseFilename = false,
+                UniqueFilename = true,
+                Overwrite = false
             };
 
             var uploadResult = await _cloudinary.UploadAsync(uploadParams);
 
             if (uploadResult.Error is not null)
-                return null;
+                throw new Exception("Cloudinary error: " + uploadResult.Error.Message);
 
             return new UploadResultDto
             {
@@ -60,6 +60,7 @@ namespace ElAmal.Application.Services.Attachments
                 PublicId = uploadResult.PublicId
             };
         }
+
 
         public async Task DeleteAsync(string? publicId)
         {
