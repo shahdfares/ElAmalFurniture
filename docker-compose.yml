@@ -13,21 +13,18 @@ services:
   api:
    build:
     dockerfile: Dockerfile/Dockerfile.dev
-    context: ./ElAmal
-  
+    context: ./ElAmal 
    volumes:
      - ./ElAmal:/app/ElAmal
-   
    depends_on:
      - mssql
      - redis
-   
    environment:
      - REDIS_HOST=redis
      - REDIS_PORT=6379
      - ASPNETCORE_ENVIRONMENT=Development
      - ConnectionStrings__DefaultConnection=Server=mssql;Database=ElAmal;User Id=sa;Password=${DB_PASSWORD};Encrypt=False;TrustServerCertificate=True
-  
+     - JWT__SecurityKey=${JWT_SECURITY_KEY}
    ports:
      - 8080:8080
 

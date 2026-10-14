@@ -7,16 +7,17 @@ namespace ElAmal
     {
         public static async Task Main(string[] args)
         {
-            var webApplication = WebApplication.CreateBuilder(args);
+            var webApplicationBuilder = WebApplication.CreateBuilder(args);
 
             #region Configuration Services
 
-            webApplication.Services.AddApplicationService(webApplication.Configuration);
-           
+            webApplicationBuilder.Services.AddApplicationService(webApplicationBuilder.Configuration);
 
-            #endregion 
+            // webApplicationBuilder.Services.AddIdentityServices(webApplicationBuilder.Configuration);
 
-            var app = webApplication.Build();
+            #endregion
+
+            var app = webApplicationBuilder.Build();
 
             #region Database Initialization
 

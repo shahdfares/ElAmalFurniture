@@ -10,6 +10,7 @@ using ElAmal.Core.Contract.Services.TechnicalSpecification;
 using ElAmal.Core.Entities.Products.Attachments;
 using ElAmal.Core.Helper;
 using ElAmal.Infrastructure.Data;
+using ElAmal.Infrastructure.Identity.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -33,6 +34,9 @@ namespace ElAmal.Shared.Extenssion
         {
             services.AddDbContext<ElAmalDbContext>(options =>
             options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddDbContext<ElAmalIdentityDbContext>(options =>
+            options.UseSqlServer(configuration.GetConnectionString("IdentityConnection")));
 
             return services;
         }

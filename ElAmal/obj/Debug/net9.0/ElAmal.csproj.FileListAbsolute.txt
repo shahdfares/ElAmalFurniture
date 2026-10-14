@@ -179,3 +179,9 @@ D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\ElAmal.Application.pdb
 D:\My Works\ElAmal\ElAmal\ElAmal\obj\Debug\net9.0\ElAmal.sourcelink.json
 D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\CloudinaryDotNet.dll
 D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\Newtonsoft.Json.dll
+D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\Microsoft.Extensions.Identity.Core.dll
+D:\My Works\ElAmal\ElAmal\ElAmal\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll

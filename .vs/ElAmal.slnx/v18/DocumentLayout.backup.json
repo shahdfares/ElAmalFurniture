@@ -3,68 +3,8 @@
   "WorkspaceRootPath": "D:\\My Works\\ElAmal\\ElAmal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|d:\\my works\\elamal\\elamal\\dashboard\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|d:\\my works\\elamal\\elamal\\elamal.core\\specifications\\productspecs\\productwithcategoryspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|solutionrelative:elamal.core\\specifications\\productspecs\\productwithcategoryspecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D58C515-2730-4378-6CA4-F42F4201D529}|ElAmal.Application\\ElAmal.Application.csproj|d:\\my works\\elamal\\elamal\\elamal.application\\services\\products\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D58C515-2730-4378-6CA4-F42F4201D529}|ElAmal.Application\\ElAmal.Application.csproj|solutionrelative:elamal.application\\services\\products\\productservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|d:\\my works\\elamal\\elamal\\elamal.core\\helper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|solutionrelative:elamal.core\\helper\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B244A4A9-7457-F45F-085E-CDF60570FBF6}|ElAmal.Shared\\ElAmal.Shared.csproj|d:\\my works\\elamal\\elamal\\elamal.shared\\dtos\\product\\productrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B244A4A9-7457-F45F-085E-CDF60570FBF6}|ElAmal.Shared\\ElAmal.Shared.csproj|solutionrelative:elamal.shared\\dtos\\product\\productrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D58C515-2730-4378-6CA4-F42F4201D529}|ElAmal.Application\\ElAmal.Application.csproj|d:\\my works\\elamal\\elamal\\elamal.application\\services\\technicalspecification\\specificatonpropertyservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D58C515-2730-4378-6CA4-F42F4201D529}|ElAmal.Application\\ElAmal.Application.csproj|solutionrelative:elamal.application\\services\\technicalspecification\\specificatonpropertyservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|d:\\my works\\elamal\\elamal\\dashboard\\controllers\\technicalspecificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\controllers\\technicalspecificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B244A4A9-7457-F45F-085E-CDF60570FBF6}|ElAmal.Shared\\ElAmal.Shared.csproj|d:\\my works\\elamal\\elamal\\elamal.shared\\dtos\\image\\imageresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B244A4A9-7457-F45F-085E-CDF60570FBF6}|ElAmal.Shared\\ElAmal.Shared.csproj|solutionrelative:elamal.shared\\dtos\\image\\imageresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|d:\\my works\\elamal\\elamal\\dashboard\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|d:\\my works\\elamal\\elamal\\elamal.core\\entities\\products\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|solutionrelative:elamal.core\\entities\\products\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|d:\\my works\\elamal\\elamal\\elamal.core\\specifications\\productspecs\\productwithimagespecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|solutionrelative:elamal.core\\specifications\\productspecs\\productwithimagespecification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|d:\\my works\\elamal\\elamal\\elamal.core\\specifications\\categoryspecs\\categorywithproductsandimages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|solutionrelative:elamal.core\\specifications\\categoryspecs\\categorywithproductsandimages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B0D95EC-839B-B92E-0A04-52DD5D8AE88F}|ElAmal.Infrastructure\\ElAmal.Infrastructure.csproj|d:\\my works\\elamal\\elamal\\elamal.infrastructure\\extenssion\\sahreddiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B0D95EC-839B-B92E-0A04-52DD5D8AE88F}|ElAmal.Infrastructure\\ElAmal.Infrastructure.csproj|solutionrelative:elamal.infrastructure\\extenssion\\sahreddiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D58C515-2730-4378-6CA4-F42F4201D529}|ElAmal.Application\\ElAmal.Application.csproj|d:\\my works\\elamal\\elamal\\elamal.application\\services\\attachments\\attachmentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D58C515-2730-4378-6CA4-F42F4201D529}|ElAmal.Application\\ElAmal.Application.csproj|solutionrelative:elamal.application\\services\\attachments\\attachmentservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|d:\\my works\\elamal\\elamal\\dashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|d:\\my works\\elamal\\elamal\\elamal\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|solutionrelative:elamal\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8B0D95EC-839B-B92E-0A04-52DD5D8AE88F}|ElAmal.Infrastructure\\ElAmal.Infrastructure.csproj|d:\\my works\\elamal\\elamal\\elamal.infrastructure\\identity\\context\\elamalidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0D95EC-839B-B92E-0A04-52DD5D8AE88F}|ElAmal.Infrastructure\\ElAmal.Infrastructure.csproj|solutionrelative:elamal.infrastructure\\identity\\context\\elamalidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,211 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "Dashboard\\Controllers\\CategoryController.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "Dashboard\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAIwCcAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T13:49:01.613Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "Dashboard\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "Dashboard\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAACIAAAA/AAAAAAAAAA==",
+              "Title": "ElAmalIdentityDbContext.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Identity\\Context\\ElAmalIdentityDbContext.cs",
+              "RelativeDocumentMoniker": "ElAmal.Infrastructure\\Identity\\Context\\ElAmalIdentityDbContext.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Identity\\Context\\ElAmalIdentityDbContext.cs",
+              "RelativeToolTip": "ElAmal.Infrastructure\\Identity\\Context\\ElAmalIdentityDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T13:50:19.901Z",
-              "IsPinned": true,
+              "WhenOpened": "2026-10-14T21:53:53.446Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TechnicalSpecificationsController.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\Controllers\\TechnicalSpecificationsController.cs",
-              "RelativeDocumentMoniker": "Dashboard\\Controllers\\TechnicalSpecificationsController.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\Controllers\\TechnicalSpecificationsController.cs",
-              "RelativeToolTip": "Dashboard\\Controllers\\TechnicalSpecificationsController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAswDIAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T14:33:07.419Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductWithCategorySpecification.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Specifications\\ProductSpecs\\ProductWithCategorySpecification.cs",
-              "RelativeDocumentMoniker": "ElAmal.Core\\Specifications\\ProductSpecs\\ProductWithCategorySpecification.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Specifications\\ProductSpecs\\ProductWithCategorySpecification.cs",
-              "RelativeToolTip": "ElAmal.Core\\Specifications\\ProductSpecs\\ProductWithCategorySpecification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T18:56:08.085Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProductServices.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\Services\\products\\ProductServices.cs",
-              "RelativeDocumentMoniker": "ElAmal.Application\\Services\\products\\ProductServices.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\Services\\products\\ProductServices.cs",
-              "RelativeToolTip": "ElAmal.Application\\Services\\products\\ProductServices.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAA1wDEAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T16:01:45.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Helper\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "ElAmal.Core\\Helper\\MappingProfile.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Helper\\MappingProfile.cs",
-              "RelativeToolTip": "ElAmal.Core\\Helper\\MappingProfile.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAwwCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T14:40:22.936Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ProductRequestDto.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Shared\\DTOs\\Product\\ProductRequestDto.cs",
-              "RelativeDocumentMoniker": "ElAmal.Shared\\DTOs\\Product\\ProductRequestDto.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Shared\\DTOs\\Product\\ProductRequestDto.cs",
-              "RelativeToolTip": "ElAmal.Shared\\DTOs\\Product\\ProductRequestDto.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBMAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T16:27:25.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SpecificatonPropertyServices.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\Services\\TechnicalSpecification\\SpecificatonPropertyServices.cs",
-              "RelativeDocumentMoniker": "ElAmal.Application\\Services\\TechnicalSpecification\\SpecificatonPropertyServices.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\Services\\TechnicalSpecification\\SpecificatonPropertyServices.cs",
-              "RelativeToolTip": "ElAmal.Application\\Services\\TechnicalSpecification\\SpecificatonPropertyServices.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T14:36:01.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ProductWithImageSpecification.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Specifications\\ProductSpecs\\ProductWithImageSpecification.cs",
-              "RelativeDocumentMoniker": "ElAmal.Core\\Specifications\\ProductSpecs\\ProductWithImageSpecification.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Specifications\\ProductSpecs\\ProductWithImageSpecification.cs",
-              "RelativeToolTip": "ElAmal.Core\\Specifications\\ProductSpecs\\ProductWithImageSpecification.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAqwA8AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T16:16:04.724Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ImageResponseDto.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Shared\\DTOs\\Image\\ImageResponseDto.cs",
-              "RelativeDocumentMoniker": "ElAmal.Shared\\DTOs\\Image\\ImageResponseDto.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Shared\\DTOs\\Image\\ImageResponseDto.cs",
-              "RelativeToolTip": "ElAmal.Shared\\DTOs\\Image\\ImageResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T16:18:40.732Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Entities\\Products\\Product.cs",
-              "RelativeDocumentMoniker": "ElAmal.Core\\Entities\\Products\\Product.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Entities\\Products\\Product.cs",
-              "RelativeToolTip": "ElAmal.Core\\Entities\\Products\\Product.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAIwBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T16:15:09.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CategoryWithProductsAndImages.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Specifications\\CategorySpecs\\CategoryWithProductsAndImages.cs",
-              "RelativeDocumentMoniker": "ElAmal.Core\\Specifications\\CategorySpecs\\CategoryWithProductsAndImages.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Specifications\\CategorySpecs\\CategoryWithProductsAndImages.cs",
-              "RelativeToolTip": "ElAmal.Core\\Specifications\\CategorySpecs\\CategoryWithProductsAndImages.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA6wBAAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T16:15:37.097Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AttachmentServices.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\Services\\Attachments\\AttachmentServices.cs",
-              "RelativeDocumentMoniker": "ElAmal.Application\\Services\\Attachments\\AttachmentServices.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\Services\\Attachments\\AttachmentServices.cs",
-              "RelativeToolTip": "ElAmal.Application\\Services\\Attachments\\AttachmentServices.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T15:53:35.001Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "SahredDIServices.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Extenssion\\SahredDIServices.cs",
-              "RelativeDocumentMoniker": "ElAmal.Infrastructure\\Extenssion\\SahredDIServices.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Extenssion\\SahredDIServices.cs",
-              "RelativeToolTip": "ElAmal.Infrastructure\\Extenssion\\SahredDIServices.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T16:06:41.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\appsettings.json",
-              "RelativeDocumentMoniker": "Dashboard\\appsettings.json",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\appsettings.json",
-              "RelativeToolTip": "Dashboard\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-14T15:48:42.542Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "ElAmal\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "ElAmal\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAC8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-14T13:07:26.595Z"
             }
           ]
         }
