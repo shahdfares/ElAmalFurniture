@@ -49,6 +49,10 @@ namespace ElAmal.Core.Specifications.ProductSpecs
             
         }
 
+        public ProductWithCategorySpecification(Guid? id) : base(p => p.Id == id)
+        {
+            ApplyInclude();
+        }
         private void ApplyInclude()
         {
             Include.Add(query => query

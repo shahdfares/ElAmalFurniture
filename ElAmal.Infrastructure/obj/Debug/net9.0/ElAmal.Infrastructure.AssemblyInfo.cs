@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElAmal.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce6dedbd5a852918b5de4d9b5389a016049e195e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5aef9466fc5201c85b651b38fa8db1fd6adc4e21")]
 [assembly: System.Reflection.AssemblyProductAttribute("ElAmal.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElAmal.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
