@@ -30,9 +30,11 @@ namespace ElAmal.Infrastructure.Data
             var adminEmail = configuration["AdminUser:Mail"];
             var adminPassword = configuration["AdminUser:Password"];
             var companyName = configuration["AdminUser:CompanyName"];
+            var recoveryEmail = configuration["AdminUser:RecoveryEmail"];
 
             //Validation 
-            if(string.IsNullOrWhiteSpace(adminEmail) || string.IsNullOrWhiteSpace(adminPassword))
+            if (string.IsNullOrWhiteSpace(adminEmail) || string.IsNullOrWhiteSpace(adminPassword)
+                || string.IsNullOrWhiteSpace(recoveryEmail))
             {
                 Console.WriteLine("[SEED] Email or Password is missing in configuration");
                 return;
@@ -48,7 +50,8 @@ namespace ElAmal.Infrastructure.Data
                     UserName = adminEmail.Split('@')[0],
                     Email = adminEmail,
                     EmailConfirmed = true,
-                    CompanyEmail = companyName!
+                    CompanyEmail = companyName!,
+                    RecoveryEmail = recoveryEmail
                 };
 
                 var result = await userManager.CreateAsync(admin, adminPassword!);

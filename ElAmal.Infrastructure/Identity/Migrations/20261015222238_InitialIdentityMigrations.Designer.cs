@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElAmal.Infrastructure.Identity.Migrations
 {
     [DbContext(typeof(ElAmalIdentityDbContext))]
-    [Migration("20261015192202_IdentityInitialMigration")]
-    partial class IdentityInitialMigration
+    [Migration("20261015222238_InitialIdentityMigrations")]
+    partial class InitialIdentityMigrations
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -70,6 +70,10 @@ namespace ElAmal.Infrastructure.Identity.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<string>("RecoveryEmail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RefreshToken")
                         .HasColumnType("nvarchar(max)");

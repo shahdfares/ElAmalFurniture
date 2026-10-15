@@ -30,6 +30,7 @@ services:
      - CloudinarySettings__CloudName=${CLOUDINARY_CLOUD_NAME}
      - CloudinarySettings__ApiKey=${CLOUDINARY_API_KEY}
      - CloudinarySettings__ApiSecret=${CLOUDINARY_API_SECRET}
+     - AdminUser__RecoveryEmail=${ADMIN_RECOVERY_EMAIL}
    ports:
      - 8080:8080
 

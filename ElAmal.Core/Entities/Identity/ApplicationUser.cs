@@ -10,7 +10,7 @@ namespace ElAmal.Core.Entities.Identity
     public class ApplicationUser : IdentityUser
     {
         public string CompanyEmail { get; set; } = null!;
-
+        public string RecoveryEmail { get; set; } = null!;
         public string? RefreshToken { get; set; }
         public DateTime? RefreshTokenExpiryTime { get; set; }
     }
