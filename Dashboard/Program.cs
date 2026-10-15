@@ -14,6 +14,8 @@ namespace Dashboard
 
 
             webApplicationBuilder.Services.AddDashboardService(webApplicationBuilder.Configuration);
+            webApplicationBuilder.Services.AddIdentityServices(webApplicationBuilder.Configuration);
+
 
             #endregion
 

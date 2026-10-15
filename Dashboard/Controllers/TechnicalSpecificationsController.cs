@@ -2,9 +2,7 @@
 using ElAmal.Core.Helper;
 using ElAmal.Shared.DTOs.TechnicalSpecification;
 using ElAmal.Shared.Errors;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Runtime.InteropServices;
 
 namespace Dashboard.Controllers
 {
@@ -26,7 +24,6 @@ namespace Dashboard.Controllers
 
         [ProducesResponseType(typeof(ReturnResult<TechniacalSpecResponseDto>), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(ApiResponse), StatusCodes.Status404NotFound)]
         [HttpPost]
         public async Task<ActionResult<ReturnResult<TechniacalSpecResponseDto>>> Add([FromBody] TechniacalSpecRequestDto requestDto)
         {
@@ -35,8 +32,8 @@ namespace Dashboard.Controllers
 
             var techProp = await _propertyServices.AddAsync(requestDto);
 
-            if(techProp is null)
-                return  NotFound(new ApiResponse(404, "No Technical Property Found"));
+            if (!techProp.IsSuccess)
+                return BadRequest(techProp);
 
             return Ok(techProp);
 

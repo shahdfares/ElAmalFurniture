@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Dashboard.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/dashboard/[controller]")]
     [ApiController]
     public class BaseController : ControllerBase
     {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Extensions.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,6 @@ namespace ElAmal.Core.Contract.Repository
     {
         Task UpdateDatabaseAsync();
 
-        Task SeedAsync();
+        Task SeedAsync(IServiceProvider serviceProvider, IConfiguration configuration);
     }
 }

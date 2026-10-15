@@ -1,12 +1,394 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\My Works\\ElAmal\\ElAmal\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0D95EC-839B-B92E-0A04-52DD5D8AE88F}|ElAmal.Infrastructure\\ElAmal.Infrastructure.csproj|d:\\my works\\elamal\\elamal\\elamal.infrastructure\\data\\elamalcontextinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0D95EC-839B-B92E-0A04-52DD5D8AE88F}|ElAmal.Infrastructure\\ElAmal.Infrastructure.csproj|solutionrelative:elamal.infrastructure\\data\\elamalcontextinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|d:\\my works\\elamal\\elamal\\dashboard\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0D95EC-839B-B92E-0A04-52DD5D8AE88F}|ElAmal.Infrastructure\\ElAmal.Infrastructure.csproj|d:\\my works\\elamal\\elamal\\elamal.infrastructure\\extenssion\\sahreddiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0D95EC-839B-B92E-0A04-52DD5D8AE88F}|ElAmal.Infrastructure\\ElAmal.Infrastructure.csproj|solutionrelative:elamal.infrastructure\\extenssion\\sahreddiservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D58C515-2730-4378-6CA4-F42F4201D529}|ElAmal.Application\\ElAmal.Application.csproj|d:\\my works\\elamal\\elamal\\elamal.application\\services\\auth\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D58C515-2730-4378-6CA4-F42F4201D529}|ElAmal.Application\\ElAmal.Application.csproj|solutionrelative:elamal.application\\services\\auth\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B0D95EC-839B-B92E-0A04-52DD5D8AE88F}|ElAmal.Infrastructure\\ElAmal.Infrastructure.csproj|d:\\my works\\elamal\\elamal\\elamal.infrastructure\\identity\\context\\elamalidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B0D95EC-839B-B92E-0A04-52DD5D8AE88F}|ElAmal.Infrastructure\\ElAmal.Infrastructure.csproj|solutionrelative:elamal.infrastructure\\identity\\context\\elamalidentitydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Identity\\Migrations\\20261015222238_InitialIdentityMigrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ElAmal.Infrastructure\\Identity\\Migrations\\20261015222238_InitialIdentityMigrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|d:\\my works\\elamal\\elamal\\elamal.core\\entities\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|solutionrelative:elamal.core\\entities\\identity\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B244A4A9-7457-F45F-085E-CDF60570FBF6}|ElAmal.Shared\\ElAmal.Shared.csproj|d:\\my works\\elamal\\elamal\\elamal.shared\\dtos\\identity\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B244A4A9-7457-F45F-085E-CDF60570FBF6}|ElAmal.Shared\\ElAmal.Shared.csproj|solutionrelative:elamal.shared\\dtos\\identity\\resetpassworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|d:\\my works\\elamal\\elamal\\elamal.core\\contract\\services\\auth\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|solutionrelative:elamal.core\\contract\\services\\auth\\iuserservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B244A4A9-7457-F45F-085E-CDF60570FBF6}|ElAmal.Shared\\ElAmal.Shared.csproj|d:\\my works\\elamal\\elamal\\elamal.shared\\dtos\\identity\\verifyotpforforgetpassdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B244A4A9-7457-F45F-085E-CDF60570FBF6}|ElAmal.Shared\\ElAmal.Shared.csproj|solutionrelative:elamal.shared\\dtos\\identity\\verifyotpforforgetpassdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|d:\\my works\\elamal\\elamal\\elamal.core\\contract\\services\\otp\\iotpservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|solutionrelative:elamal.core\\contract\\services\\otp\\iotpservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D58C515-2730-4378-6CA4-F42F4201D529}|ElAmal.Application\\ElAmal.Application.csproj|d:\\my works\\elamal\\elamal\\elamal.application\\services\\otp\\otpservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D58C515-2730-4378-6CA4-F42F4201D529}|ElAmal.Application\\ElAmal.Application.csproj|solutionrelative:elamal.application\\services\\otp\\otpservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D58C515-2730-4378-6CA4-F42F4201D529}|ElAmal.Application\\ElAmal.Application.csproj|d:\\my works\\elamal\\elamal\\elamal.application\\services\\mail\\mailsettingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D58C515-2730-4378-6CA4-F42F4201D529}|ElAmal.Application\\ElAmal.Application.csproj|solutionrelative:elamal.application\\services\\mail\\mailsettingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|d:\\my works\\elamal\\elamal\\elamal.core\\contract\\services\\mail\\imailsettingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|solutionrelative:elamal.core\\contract\\services\\mail\\imailsettingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|d:\\my works\\elamal\\elamal\\elamal.core\\entities\\mail\\mailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|solutionrelative:elamal.core\\entities\\mail\\mailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|d:\\my works\\elamal\\elamal\\elamal.core\\entities\\mail\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D74AEC91-1F25-BF9D-5A12-7D58446B59A4}|ElAmal.Core\\ElAmal.Core.csproj|solutionrelative:elamal.core\\entities\\mail\\email.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|d:\\my works\\elamal\\elamal\\elamal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|solutionrelative:elamal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|d:\\my works\\elamal\\elamal\\dashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|d:\\my works\\elamal\\elamal\\dashboard\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E4566E71-1E62-2409-5DAA-E2EA6D3710DC}|Dashboard\\Dashboard.csproj|solutionrelative:dashboard\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|d:\\my works\\elamal\\elamal\\elamal\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|solutionrelative:elamal\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|d:\\my works\\elamal\\elamal\\elamal\\extensions\\identityservicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C92EDA50-C266-4090-42C5-CB35356AD1AA}|ElAmal\\ElAmal.csproj|solutionrelative:elamal\\extensions\\identityservicesextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B244A4A9-7457-F45F-085E-CDF60570FBF6}|ElAmal.Shared\\ElAmal.Shared.csproj|d:\\my works\\elamal\\elamal\\elamal.shared\\dtos\\identity\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B244A4A9-7457-F45F-085E-CDF60570FBF6}|ElAmal.Shared\\ElAmal.Shared.csproj|solutionrelative:elamal.shared\\dtos\\identity\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ElAmalIdentityDbContext.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Identity\\Context\\ElAmalIdentityDbContext.cs",
+              "RelativeDocumentMoniker": "ElAmal.Infrastructure\\Identity\\Context\\ElAmalIdentityDbContext.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Identity\\Context\\ElAmalIdentityDbContext.cs",
+              "RelativeToolTip": "ElAmal.Infrastructure\\Identity\\Context\\ElAmalIdentityDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T22:14:42.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\Services\\Auth\\UserServices.cs",
+              "RelativeDocumentMoniker": "ElAmal.Application\\Services\\Auth\\UserServices.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\Services\\Auth\\UserServices.cs",
+              "RelativeToolTip": "ElAmal.Application\\Services\\Auth\\UserServices.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T19:57:47.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Dashboard\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Dashboard\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T20:46:52.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SahredDIServices.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Extenssion\\SahredDIServices.cs",
+              "RelativeDocumentMoniker": "ElAmal.Infrastructure\\Extenssion\\SahredDIServices.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Extenssion\\SahredDIServices.cs",
+              "RelativeToolTip": "ElAmal.Infrastructure\\Extenssion\\SahredDIServices.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADwAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T20:44:52.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ElAmalContextInitializer.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Data\\ElAmalContextInitializer.cs",
+              "RelativeDocumentMoniker": "ElAmal.Infrastructure\\Data\\ElAmalContextInitializer.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Data\\ElAmalContextInitializer.cs",
+              "RelativeToolTip": "ElAmal.Infrastructure\\Data\\ElAmalContextInitializer.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAUwDUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T21:05:08.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20261015222238_InitialIdentityMigrations.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Identity\\Migrations\\20261015222238_InitialIdentityMigrations.cs",
+              "RelativeDocumentMoniker": "ElAmal.Infrastructure\\Identity\\Migrations\\20261015222238_InitialIdentityMigrations.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Infrastructure\\Identity\\Migrations\\20261015222238_InitialIdentityMigrations.cs",
+              "RelativeToolTip": "ElAmal.Infrastructure\\Identity\\Migrations\\20261015222238_InitialIdentityMigrations.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T22:22:39.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Entities\\Identity\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "ElAmal.Core\\Entities\\Identity\\ApplicationUser.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Entities\\Identity\\ApplicationUser.cs",
+              "RelativeToolTip": "ElAmal.Core\\Entities\\Identity\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T22:21:00.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ResetPasswordDto.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Shared\\DTOs\\Identity\\ResetPasswordDto.cs",
+              "RelativeDocumentMoniker": "ElAmal.Shared\\DTOs\\Identity\\ResetPasswordDto.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Shared\\DTOs\\Identity\\ResetPasswordDto.cs",
+              "RelativeToolTip": "ElAmal.Shared\\DTOs\\Identity\\ResetPasswordDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwAwAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T21:56:33.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VerifyOtpForForgetPassDto.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Shared\\DTOs\\Identity\\VerifyOtpForForgetPassDto.cs",
+              "RelativeDocumentMoniker": "ElAmal.Shared\\DTOs\\Identity\\VerifyOtpForForgetPassDto.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Shared\\DTOs\\Identity\\VerifyOtpForForgetPassDto.cs",
+              "RelativeToolTip": "ElAmal.Shared\\DTOs\\Identity\\VerifyOtpForForgetPassDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T21:55:05.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IOtpServices.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Contract\\Services\\Otp\\IOtpServices.cs",
+              "RelativeDocumentMoniker": "ElAmal.Core\\Contract\\Services\\Otp\\IOtpServices.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Contract\\Services\\Otp\\IOtpServices.cs",
+              "RelativeToolTip": "ElAmal.Core\\Contract\\Services\\Otp\\IOtpServices.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T21:14:49.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUserServices.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Contract\\Services\\Auth\\IUserServices.cs",
+              "RelativeDocumentMoniker": "ElAmal.Core\\Contract\\Services\\Auth\\IUserServices.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Contract\\Services\\Auth\\IUserServices.cs",
+              "RelativeToolTip": "ElAmal.Core\\Contract\\Services\\Auth\\IUserServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T19:52:09.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OtpServices.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\Services\\Otp\\OtpServices.cs",
+              "RelativeDocumentMoniker": "ElAmal.Application\\Services\\Otp\\OtpServices.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\Services\\Otp\\OtpServices.cs",
+              "RelativeToolTip": "ElAmal.Application\\Services\\Otp\\OtpServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T21:16:46.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MailSettingsService.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\Services\\Mail\\MailSettingsService.cs",
+              "RelativeDocumentMoniker": "ElAmal.Application\\Services\\Mail\\MailSettingsService.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Application\\Services\\Mail\\MailSettingsService.cs",
+              "RelativeToolTip": "ElAmal.Application\\Services\\Mail\\MailSettingsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T21:32:04.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IMailSettingsService.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Contract\\Services\\Mail\\IMailSettingsService.cs",
+              "RelativeDocumentMoniker": "ElAmal.Core\\Contract\\Services\\Mail\\IMailSettingsService.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Contract\\Services\\Mail\\IMailSettingsService.cs",
+              "RelativeToolTip": "ElAmal.Core\\Contract\\Services\\Mail\\IMailSettingsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T21:30:28.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "MailSettings.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Entities\\Mail\\MailSettings.cs",
+              "RelativeDocumentMoniker": "ElAmal.Core\\Entities\\Mail\\MailSettings.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Entities\\Mail\\MailSettings.cs",
+              "RelativeToolTip": "ElAmal.Core\\Entities\\Mail\\MailSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T21:28:38.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Email.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Entities\\Mail\\Email.cs",
+              "RelativeDocumentMoniker": "ElAmal.Core\\Entities\\Mail\\Email.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Core\\Entities\\Mail\\Email.cs",
+              "RelativeToolTip": "ElAmal.Core\\Entities\\Mail\\Email.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T21:25:48.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\appsettings.json",
+              "RelativeDocumentMoniker": "ElAmal\\appsettings.json",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\appsettings.json",
+              "RelativeToolTip": "ElAmal\\appsettings.json",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAB8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-15T21:18:57.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": ".env",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\.env",
+              "RelativeDocumentMoniker": "Dashboard\\.env",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\.env",
+              "RelativeToolTip": "Dashboard\\.env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-15T21:09:41.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": ".env",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\.env",
+              "RelativeDocumentMoniker": "ElAmal\\.env",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\.env",
+              "RelativeToolTip": "ElAmal\\.env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-15T21:09:17.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\appsettings.json",
+              "RelativeDocumentMoniker": "Dashboard\\appsettings.json",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\Dashboard\\appsettings.json",
+              "RelativeToolTip": "Dashboard\\appsettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-15T20:51:11.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IdentityServicesExtension.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Extensions\\IdentityServicesExtension.cs",
+              "RelativeDocumentMoniker": "ElAmal\\Extensions\\IdentityServicesExtension.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Extensions\\IdentityServicesExtension.cs",
+              "RelativeToolTip": "ElAmal\\Extensions\\IdentityServicesExtension.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T21:04:39.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Shared\\DTOs\\Identity\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "ElAmal.Shared\\DTOs\\Identity\\LoginResponseDto.cs",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal.Shared\\DTOs\\Identity\\LoginResponseDto.cs",
+              "RelativeToolTip": "ElAmal.Shared\\DTOs\\Identity\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-15T20:43:00.854Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
