@@ -25,6 +25,11 @@ services:
      - ASPNETCORE_ENVIRONMENT=Development
      - ConnectionStrings__DefaultConnection=Server=mssql;Database=ElAmal;User Id=sa;Password=${DB_PASSWORD};Encrypt=False;TrustServerCertificate=True
      - JWT__SecurityKey=${JWT_SECURITY_KEY}
+     - AdminUser__Email=${ADMIN_EMAIL}
+     - AdminUser__Password=${ADMIN_PASSWORD}
+     - CloudinarySettings__CloudName=${CLOUDINARY_CLOUD_NAME}
+     - CloudinarySettings__ApiKey=${CLOUDINARY_API_KEY}
+     - CloudinarySettings__ApiSecret=${CLOUDINARY_API_SECRET}
    ports:
      - 8080:8080
 

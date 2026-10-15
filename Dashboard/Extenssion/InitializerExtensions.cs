@@ -19,6 +19,8 @@ namespace ElAmal.Extensions
             try
             {
                 await elAmalContextInitializer.UpdateDatabaseAsync();
+
+                await elAmalContextInitializer.SeedAsync(service, configuration);
             }
             catch (Exception ex)
             {

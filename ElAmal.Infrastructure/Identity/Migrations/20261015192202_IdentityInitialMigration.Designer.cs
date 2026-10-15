@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElAmal.Infrastructure.Identity.Migrations
 {
     [DbContext(typeof(ElAmalIdentityDbContext))]
-    [Migration("20261014215536_IdentityInitialMigration")]
+    [Migration("20261015192202_IdentityInitialMigration")]
     partial class IdentityInitialMigration
     {
         /// <inheritdoc />
@@ -70,6 +70,12 @@ namespace ElAmal.Infrastructure.Identity.Migrations
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
+
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("RefreshTokenExpiryTime")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");

@@ -1,4 +1,5 @@
 
+using Dashboard.Extenssion;
 using ElAmal.Extensions;
 
 namespace ElAmal
@@ -13,7 +14,7 @@ namespace ElAmal
 
             webApplicationBuilder.Services.AddApplicationService(webApplicationBuilder.Configuration);
 
-            // webApplicationBuilder.Services.AddIdentityServices(webApplicationBuilder.Configuration);
+            webApplicationBuilder.Services.AddIdentityServices(webApplicationBuilder.Configuration);
 
             #endregion
 
