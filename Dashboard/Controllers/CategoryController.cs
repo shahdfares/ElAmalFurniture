@@ -3,10 +3,12 @@ using ElAmal.Core.Contract.Services.Category;
 using ElAmal.Core.Helper;
 using ElAmal.Shared.DTOs.Category;
 using ElAmal.Shared.Errors;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dashboard.Controllers
 {
+    [Authorize]
     public class CategoryController : BaseController
     {
         private readonly ICategoryServices _categoryServices;

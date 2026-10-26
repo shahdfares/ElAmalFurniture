@@ -31,14 +31,11 @@ services:
      - CloudinarySettings__ApiKey=${CLOUDINARY_API_KEY}
      - CloudinarySettings__ApiSecret=${CLOUDINARY_API_SECRET}
      - AdminUser__RecoveryEmail=${ADMIN_RECOVERY_EMAIL}
+     - MailSettings_Password=${MAIL_SETTINGS_PASSWORD}
    ports:
      - 8080:8080
 
 volumes:
    sql:
   
-  
-  
-
-     
   

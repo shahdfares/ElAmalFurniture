@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Matrex.Core.DTOs.Identity
+namespace ElAmal.Shared.DTOs.Identity
 {
     public class LoginResponseDto
     {

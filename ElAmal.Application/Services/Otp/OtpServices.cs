@@ -24,7 +24,7 @@ namespace ElAmal.Application.Services.Otp
         }
         public async Task<ReturnResult<object>> GenerateAndSendOtpAsync(string email)
         {
-            var rateLimitResult = await CheckOtpRateLimitAsync(email);
+            var rateLimitResult = await CheckOtpRateLimitAsync();
 
             if (!rateLimitResult.IsSuccess)
                 return rateLimitResult;
@@ -36,7 +36,7 @@ namespace ElAmal.Application.Services.Otp
             var hashedOtp = HashOtp(otp);
 
             // Save hashed OTP in Redis with expiry time
-            await _database.StringSetAsync($"otp:{email}", hashedOtp, TimeSpan.FromMinutes(OtpExpiryMinutes));
+            await _database.StringSetAsync($"otp:elamal@admin.com", hashedOtp, TimeSpan.FromMinutes(OtpExpiryMinutes)); // 
 
             // Create and send OTP email
             var mail = BuildOtpEmail(email, otp);
@@ -49,7 +49,7 @@ namespace ElAmal.Application.Services.Otp
         public async Task<ReturnResult<object>> ResendOtpAsync(string email)
         {
             // Rate limit check
-            var rateLimitResult = await CheckOtpRateLimitAsync(email);
+            var rateLimitResult = await CheckOtpRateLimitAsync();
 
             if (!rateLimitResult.IsSuccess)
                 return rateLimitResult;
@@ -60,7 +60,7 @@ namespace ElAmal.Application.Services.Otp
             var hashedOtp = HashOtp(otp);
 
             // Store new OTP
-            await _database.StringSetAsync($"otp:{email}", hashedOtp, TimeSpan.FromMinutes(OtpExpiryMinutes));
+            await _database.StringSetAsync($"otp:elamal@admin.com", hashedOtp, TimeSpan.FromMinutes(OtpExpiryMinutes));
 
             var mail = BuildOtpEmail(email, otp);
 
@@ -94,11 +94,11 @@ namespace ElAmal.Application.Services.Otp
             return true;
         }
 
-        private async Task<ReturnResult<object>> CheckOtpRateLimitAsync(string email)
+        private async Task<ReturnResult<object>> CheckOtpRateLimitAsync()
         {
-            email = email.Trim().ToLowerInvariant();
+            //email = email.Trim().ToLowerInvariant();
 
-            var key = $"otp:rate_limit:{email}";
+            var key = $"otp:rate_limit: elamal@admin.com";  // 
 
             var added = await _database.StringSetAsync(key, "1", TimeSpan.FromSeconds(RateLimitSeconds),
             when: When.NotExists);
