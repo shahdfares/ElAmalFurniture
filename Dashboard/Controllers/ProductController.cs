@@ -3,11 +3,12 @@ using ElAmal.Core.Helper;
 using ElAmal.Core.Specifications.ProductSpecs;
 using ElAmal.Shared.DTOs.Product;
 using ElAmal.Shared.Errors;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dashboard.Controllers
 {
-    
+    [Authorize]
     public class ProductController (IProductServices _productServices): BaseController
     {
         [ProducesResponseType(typeof(Pagenation<ProductToReturnDto>), StatusCodes.Status200OK)]

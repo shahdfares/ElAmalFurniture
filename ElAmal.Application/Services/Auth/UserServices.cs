@@ -3,7 +3,6 @@ using ElAmal.Core.Contract.Services.Otp;
 using ElAmal.Core.Entities.Identity;
 using ElAmal.Core.Helper;
 using ElAmal.Shared.DTOs.Identity;
-using Matrex.Core.DTOs.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -69,7 +68,7 @@ namespace ElAmal.Application.Services.Auth
                     .Fail("Recovery email is not configured.");
 
             // 3. Send OTP to Recovery Email
-            var result = await _otpServices.GenerateAndSendOtpAsync(user.RecoveryEmail);
+            var result = await _otpServices.GenerateAndSendOtpAsync(user.RecoveryEmail!);  // 
 
             if (!result.IsSuccess)
                 return ReturnResult<object>.Fail(result.Message);
@@ -132,10 +131,8 @@ namespace ElAmal.Application.Services.Auth
                 resetPasswordDto.NewPassword);
 
             if (!result.Succeeded)
-            {
-                return ReturnResult<object>.Fail(
-                    result.Errors.First().Description);
-            }
+                return ReturnResult<object>.Fail(result.Errors.First().Description);
+            
 
             return ReturnResult<object>.Success(
                 null!,

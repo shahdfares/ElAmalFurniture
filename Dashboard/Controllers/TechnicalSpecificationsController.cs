@@ -2,11 +2,12 @@
 using ElAmal.Core.Helper;
 using ElAmal.Shared.DTOs.TechnicalSpecification;
 using ElAmal.Shared.Errors;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Dashboard.Controllers
 {
-    
+    [Authorize]
     public class TechnicalSpecificationsController (ISpecificatonPropertyServices _propertyServices): BaseController
     {
         [ProducesResponseType(typeof(ReturnResult<IReadOnlyList<TechniacalSpecResponseDto>>), StatusCodes.Status200OK)]

@@ -1,6 +1,5 @@
 ﻿using ElAmal.Core.Helper;
 using ElAmal.Shared.DTOs.Identity;
-using Matrex.Core.DTOs.Identity;
 
 namespace ElAmal.Core.Contract.Services.Auth
 {

@@ -2,16 +2,18 @@
 using ElAmal.Core.Helper;
 using ElAmal.Shared.DTOs.Identity;
 using ElAmal.Shared.Errors;
-using Matrex.Core.DTOs.Identity;
 using Microsoft.AspNetCore.Mvc;
+using MimeKit.Text;
 
 namespace Dashboard.Controllers
 {
     public class AccountController(IUserServices _userServices) : BaseController
     {
-        [HttpPost("login")] //Post: /api/Account/login
-        public async Task<ActionResult<ReturnResult<LoginResponseDto>>> Login([FromBody] LoginRequestDto loginDto)
+        [HttpPost("login")] //Post: /api/dashboard/Account/login
+        public async Task<ActionResult<LoginResponseDto>> Login([FromBody] LoginRequestDto loginDto)
         {
+            if (string.IsNullOrEmpty(loginDto.Email) && string.IsNullOrEmpty(loginDto.Email))
+                return BadRequest(new ApiResponse(400));
 
             var user = await _userServices.LogInAsync(loginDto);
 
@@ -38,6 +40,9 @@ namespace Dashboard.Controllers
         [HttpPost("resend-forgot-password-otp")]
         public async Task<ActionResult> ResendForgotPasswordOtp([FromBody] ForgotPasswordDto dto)
         {
+            if (dto is null)
+                return BadRequest(new ApiResponse(400));
+
             var result = await _userServices.ResendForgotPasswordOtpAsync(dto.Email);
 
             if (!result.IsSuccess)
@@ -49,6 +54,9 @@ namespace Dashboard.Controllers
         [HttpPost("verify-forgot-password-otp")]
         public async Task<ActionResult> VerifyForgotPasswordOtp([FromBody] VerifyOtpForForgetPassDto dto)
         {
+            if (dto is null)
+                return BadRequest(new ApiResponse(404));
+
             var result = await _userServices.VerifyForgotPasswordOtpAsync(dto);
 
             if (!result.IsSuccess)
@@ -61,15 +69,13 @@ namespace Dashboard.Controllers
         [HttpPost("reset-password")]
         public async Task<ActionResult> ResetPassword([FromBody] ResetPasswordDto dto)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            if (dto is null)
+                return BadRequest(new ApiResponse(400));
 
-            var result =
-                await _userServices.ResetPasswordAsync(dto);
+            var result = await _userServices.ResetPasswordAsync(dto);
 
             if (!result.IsSuccess)
                 return BadRequest(new ApiResponse(400));
-
 
             return Ok(result);
         }
