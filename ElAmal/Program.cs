@@ -14,7 +14,7 @@ namespace ElAmal
 
             webApplicationBuilder.Services.AddApplicationService(webApplicationBuilder.Configuration);
 
-            webApplicationBuilder.Services.AddIdentityServices(webApplicationBuilder.Configuration); ;
+            webApplicationBuilder.Services.AddIdentityServices(webApplicationBuilder.Configuration); 
 
             #endregion
 
