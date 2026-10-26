@@ -9,7 +9,7 @@ namespace Dashboard.Controllers
 {
     public class AccountController(IUserServices _userServices) : BaseController
     {
-        [HttpPost("login")] //Post: /api/dashboard/Account/login
+        [HttpPost("login")]  //Post: /api/dashboard/Account/login
         public async Task<ActionResult<LoginResponseDto>> Login([FromBody] LoginRequestDto loginDto)
         {
             if (string.IsNullOrEmpty(loginDto.Email) && string.IsNullOrEmpty(loginDto.Email))
@@ -23,7 +23,7 @@ namespace Dashboard.Controllers
             return Ok(user);
         }
 
-        [HttpPost("forgot-password")]
+        [HttpPost("forgot-password")]  //Post: /api/dashboard/Account/forgot-password
         public async Task<ActionResult> ForgotPassword([FromBody] ForgotPasswordDto dto)
         {
             if (dto is null)
