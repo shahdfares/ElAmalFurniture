@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElAmal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0eeb42aed3d2366c142bec6e911471c392347bc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64f00ae79b4024fd52592417d5786a478346d561")]
 [assembly: System.Reflection.AssemblyProductAttribute("ElAmal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElAmal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

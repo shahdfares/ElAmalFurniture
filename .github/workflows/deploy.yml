@@ -9,4 +9,10 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - uses: actions/checkout@v2
-    
+   - run: docker login -u ${{sercets_DOCKER_USERNAME}} -p ${{sercets_DOCKER_PASSWORD}}
+  
+   - run: docker build -t shahdfares/elamal-website-backend -f ../ElAmal/Dockerfile .
+   - run: docker build -t shahdfares/elamal-dashboard-backend -f ../Dashboard/Dockerfile .
+  
+   - run: docker push shahdfares/elamal-website-backend 
+   - run: docker push shahdfares/elamal-dashboard-backend  

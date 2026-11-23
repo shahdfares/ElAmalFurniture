@@ -26,8 +26,8 @@
               "Title": "Dockerfile.dev",
               "DocumentMoniker": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Dockerfile.dev",
               "RelativeDocumentMoniker": "ElAmal\\Dockerfile.dev",
-              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Dockerfile.dev*",
-              "RelativeToolTip": "ElAmal\\Dockerfile.dev*",
+              "ToolTip": "D:\\My Works\\ElAmal\\ElAmal\\ElAmal\\Dockerfile.dev",
+              "RelativeToolTip": "ElAmal\\Dockerfile.dev",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2026-11-18T19:33:45.707Z",
@@ -43,8 +43,7 @@
               "RelativeToolTip": "ElAmal.Core\\Specifications\\ProductSpecs\\ProductSpecParams.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T18:14:30.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-12T18:14:30.409Z"
             }
           ]
         }
