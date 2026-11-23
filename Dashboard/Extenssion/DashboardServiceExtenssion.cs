@@ -12,10 +12,9 @@ namespace Dashboard.Extenssion
             services.AddBuiltInServices();  
             services.AddSwaggerServices();  
             services.AddValidationErrorHandling();
-
+           
             services.AddSahredDIServices(configuration);
         
-
             return services;
         }
 
@@ -89,6 +88,7 @@ namespace Dashboard.Extenssion
 
             return services;
         }
+
 
     }
 }

@@ -10,7 +10,7 @@ namespace ElAmal.Core.Specifications.ProductSpecs
     {
 		private const int MaxValue = 20;
 
-		private int PageSize = 15;
+		private int PageSize = 16;
 
 		public int pageSize
 		{

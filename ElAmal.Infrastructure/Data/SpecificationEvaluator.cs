@@ -25,6 +25,9 @@ namespace ElAmal.Infrastructure.Data
             else if(spec.OrderByDesc is not null)
                 query = query.OrderByDescending(spec.OrderByDesc);
 
+            // Pagination
+            if (spec.isPagenation)
+                query = query.Skip(spec.Skip).Take(spec.Take);
 
             // Include 
             query = spec.Include.Aggregate(query, (currentQuery, inputExpression) => inputExpression(currentQuery));

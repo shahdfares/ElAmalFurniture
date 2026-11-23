@@ -10,7 +10,7 @@ namespace ElAmal.Core.Specifications.ProductSpecs
     public class ProductWithFiltrationForCount : BaseSpecification<Product,Guid>
     {
         public ProductWithFiltrationForCount(ProductSpecParams specParams): 
-            base(P =>  (string.IsNullOrEmpty(specParams.Search) || P.Name.ToLower().Contains(specParams.Search)) &&
+            base(P => P.IsVisibile && (string.IsNullOrEmpty(specParams.Search) || P.Name.ToLower().Contains(specParams.Search!)) &&
                         (string.IsNullOrEmpty(specParams.CategorySlug) || P.Category!.Slug == specParams.CategorySlug))
         {
             

@@ -22,7 +22,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using StackExchange.Redis;
-using System.Runtime.CompilerServices;
 
 namespace ElAmal.Shared.Extenssion
 {
@@ -36,6 +35,8 @@ namespace ElAmal.Shared.Extenssion
             services.AddAttachmentServices(configuration);
             services.AddMailSettingsServices(configuration);
             services.AddRedisServices(configuration);
+            services.AddRealTimeCors();
+            services.AddSignalRServices();
 
             return services;
         }
@@ -99,5 +100,28 @@ namespace ElAmal.Shared.Extenssion
             return services;
         }
 
+        private static IServiceCollection AddRealTimeCors(this IServiceCollection services)
+        {
+            services.AddCors(o =>
+            {
+                o.AddPolicy("default", p =>
+                {
+                    p.AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .SetIsOriginAllowed(origin => true)
+                    .AllowCredentials();
+
+                });
+            });
+
+            return services;
+        }
+
+        private static IServiceCollection AddSignalRServices(this IServiceCollection services)
+        {
+            services.AddSignalR();
+
+            return services;
+        }
     }
 }

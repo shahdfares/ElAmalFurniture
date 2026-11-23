@@ -1,4 +1,5 @@
-﻿using ElAmal.Core.Contract.Services.Products;
+﻿using ElAmal.Application.Services.products;
+using ElAmal.Core.Contract.Services.Products;
 using ElAmal.Core.Helper;
 using ElAmal.Core.Specifications.ProductSpecs;
 using ElAmal.Shared.DTOs.Product;
@@ -70,7 +71,7 @@ namespace Dashboard.Controllers
             return Ok(result);
         }
 
-        [HttpPut("{productId:guid}/primary-image/{imageId:guid}")]
+        [HttpPatch("{productId:guid}/primary-image/{imageId:guid}")]
         public async Task<ActionResult<bool>> SetPrimaryImage(Guid productId, Guid imageId)
         {
             if (productId == Guid.Empty && imageId == Guid.Empty)
@@ -111,7 +112,24 @@ namespace Dashboard.Controllers
 
             return Ok(result);
         }
-        
+
+        [HttpPatch("{id}/visibility")]
+        public async Task<IActionResult> UpdateVisibility(Guid id, [FromBody] ProductVisibilityDto request)
+        {
+            if (id == Guid.Empty)
+                return BadRequest(new ApiResponse(400, "Invalid product id"));
+
+            if (request is null)
+                return BadRequest(new ApiResponse(404, "Invalid request"));
+
+            var result = await _productServices.UpdateVisibilityAsync(id, request);
+
+            if (!result.IsSuccess)
+                return BadRequest(result);
+
+            return Ok(result);
+        }
+
     }
 }
 

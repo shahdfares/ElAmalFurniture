@@ -19,6 +19,7 @@ namespace ElAmal.Core.Contract.Repository
         Task<TEntity?> GetEntityWithSpecAync(ISpecification<TEntity, TKey> spec, CancellationToken cancellationToken = default);
         Task<int> GetCount(ISpecification<TEntity, TKey> spec);
         Task<bool> ExistsAsync(Expression<Func<TEntity, bool>> expression);
+        Task<IReadOnlyList<TResult>> GetAllProjectedAsync<TResult>(Expression<Func<TEntity, TResult>> selector);
         Task AddAsync(TEntity entity, CancellationToken cancellationToken = default);
         void Update(TEntity entity);
         void Delete(TEntity entity);

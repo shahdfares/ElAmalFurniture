@@ -25,7 +25,8 @@ namespace ElAmal.Core.Helper
             CreateMap<ProductTechnicalSpecification, TechnicalSpecificationResponse>()
                 .ForMember(d => d.Name, o => o.MapFrom(s => s.SpecificationProperties!.Name));
 
-            CreateMap<ProductCategory, CategoryResponseDto>();
+            CreateMap<ProductCategory, CategoryResponseDto>()
+                 .ForMember(dest => dest.ProductsCount, opt => opt.MapFrom(src => src.Products.Count)); 
 
             CreateMap<CategoryRequestDto, ProductCategory>();
 
