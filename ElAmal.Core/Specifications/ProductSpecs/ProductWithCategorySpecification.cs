@@ -6,14 +6,12 @@ namespace ElAmal.Core.Specifications.ProductSpecs
     public class ProductWithCategorySpecification : BaseSpecification<Product, Guid>
     {
         public ProductWithCategorySpecification(ProductSpecParams specParams) :
-            base(P => (string.IsNullOrEmpty(specParams.Search) || P.Name.ToLower().Contains(specParams.Search)) &&
-                        string.IsNullOrEmpty(specParams.CategorySlug) || P.Category!.Slug == specParams.CategorySlug)
+            base(P => P.IsVisibile && (string.IsNullOrEmpty(specParams.Search) || P.Name.ToLower().Contains(specParams.Search!.ToLower())) &&
+                                       string.IsNullOrEmpty(specParams.CategorySlug) || P.Category!.Slug == specParams.CategorySlug)
         {
             ApplyInclude();
 
             //Sort 
-            if (!string.IsNullOrEmpty(specParams.Sort))
-            {
                 switch(specParams.Sort) {
 
                     case "NameAsc": 
@@ -37,7 +35,7 @@ namespace ElAmal.Core.Specifications.ProductSpecs
                         break;
 
                 }
-            }
+            
 
             // Pagenation
             ApplyPagenation((specParams.PageIndex - 1) * specParams.pageSize, specParams.pageSize);

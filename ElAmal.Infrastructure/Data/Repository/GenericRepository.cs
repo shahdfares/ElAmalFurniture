@@ -2,6 +2,7 @@
 using ElAmal.Core.Entities;
 using ElAmal.Core.Specifications;
 using Microsoft.EntityFrameworkCore;
+using Org.BouncyCastle.Utilities.Collections;
 using System.Linq.Expressions;
 
 namespace ElAmal.Infrastructure.Data.Repository
@@ -38,5 +39,10 @@ namespace ElAmal.Infrastructure.Data.Repository
 
         public async Task<bool> ExistsAsync(Expression<Func<TEntity, bool>> expression)
           => await _dbContext.Set<TEntity>().AnyAsync(expression);
+
+        public  async Task<IReadOnlyList<TResult>> GetAllProjectedAsync<TResult>(Expression<Func<TEntity, TResult>> selector)
+        {
+            return await _dbContext.Set<TEntity>().AsNoTracking().Select(selector).ToListAsync();
+        }
     }
 }

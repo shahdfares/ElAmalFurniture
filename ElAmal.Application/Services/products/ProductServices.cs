@@ -7,9 +7,11 @@ using ElAmal.Core.Entities.Products.Category;
 using ElAmal.Core.Entities.Products.Images;
 using ElAmal.Core.Entities.Products.TechnicalSpecifications;
 using ElAmal.Core.Helper;
+using ElAmal.Core.Helper.Hubs;
 using ElAmal.Core.Specifications.ProductSpecs;
 using ElAmal.Shared.DTOs.Attachment;
 using ElAmal.Shared.DTOs.Product;
+using Microsoft.AspNetCore.SignalR;
 
 namespace ElAmal.Application.Services.products
 {
@@ -18,14 +20,17 @@ namespace ElAmal.Application.Services.products
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
         private readonly IAttachmentServices _attachmentServices;
+        private readonly IHubContext<ProductHub> _productHub;
 
         public ProductServices(IUnitOfWork unitOfWork,
             IMapper mapper,
-            IAttachmentServices attachmentServices)
+            IAttachmentServices attachmentServices,
+            IHubContext<ProductHub> productHub)
         {
            _unitOfWork = unitOfWork;
            _mapper = mapper;
             _attachmentServices = attachmentServices;
+            _productHub = productHub;
         }
 
        
@@ -567,11 +572,11 @@ namespace ElAmal.Application.Services.products
 
             #region Save
 
-            _unitOfWork
-                .GetRepository<Product, Guid>()
-                .Update(product);
+            _unitOfWork.GetRepository<Product, Guid>().Update(product);
 
             await _unitOfWork.CompleteAsync();
+
+            await _productHub.Clients.All.SendAsync("PrimaryImageChanged",productId);
 
             #endregion
 
@@ -579,6 +584,23 @@ namespace ElAmal.Application.Services.products
             return ReturnResult<bool>.Success(
                 true,
                 "Primary image updated successfully.");
+        }
+
+        public async Task<ReturnResult<bool>> UpdateVisibilityAsync(Guid id, ProductVisibilityDto request)
+        {
+            var product = await _unitOfWork.GetRepository<Product, Guid>().GetEntityAync(id);
+
+            if (product == null)
+                return ReturnResult<bool>.Fail("Product not found");
+
+            product.IsVisibile = request.IsVisibile;
+
+            await _unitOfWork.CompleteAsync();
+
+            // Notify connected clients after saving to database
+            await _productHub.Clients.All.SendAsync("ProductVisibilityChanged", id);
+
+            return ReturnResult<bool>.Success(true, "Product visibility updated successfully");
         }
     }
 }

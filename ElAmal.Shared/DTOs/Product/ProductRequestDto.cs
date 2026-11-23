@@ -13,7 +13,7 @@ namespace ElAmal.Shared.DTOs.Product
         //Basic Information
         public string? Name { get; set; } = null!;
         public string? Code { get; set; }
-        public string? Descripton { get; set; }
+        public string? Description { get; set; }
         public Guid? CategoryId { get; set; }
 
         // Material Construction

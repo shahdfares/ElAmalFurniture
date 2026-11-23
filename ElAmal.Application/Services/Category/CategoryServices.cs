@@ -14,12 +14,14 @@ namespace ElAmal.Application.Services.Category
        
         public async Task<IReadOnlyList<CategoryResponseDto>> GetAllAsync()
         {
-            var categories = await _unitOfWork.GetRepository<ProductCategory, Guid>().GetAllAsync();
-
-            if (categories is null)
-                return null!;
-
-            return _mapper.Map<IReadOnlyList<CategoryResponseDto>>(categories);
+            return await _unitOfWork.GetRepository<ProductCategory, Guid>()
+                .GetAllProjectedAsync(c => new CategoryResponseDto
+           {
+            Id = c.Id,
+            Name = c.Name,
+            Slug = c.Slug!,
+            ProductsCount = c.Products.Count()
+          });
         }
 
         public async Task<ReturnResult<CategoryResponseDto>> AddAsync(CategoryRequestDto categoryRequestDto)

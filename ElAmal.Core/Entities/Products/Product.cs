@@ -15,6 +15,7 @@ namespace ElAmal.Core.Entities.Products
         public string? Code { get; set; }
         public string? Description { get; set; }
         public string? Slug { get; set; }
+        public bool IsVisibile { get; set; } = true;
 
         // Navigational properties
 

@@ -19,9 +19,8 @@ namespace ElAmal.Core.Specifications.CategorySpecs
         private void ApplyInclude()
         {
             Include.Add(query => query
-                     .Include(c => c.Products)
-                     .ThenInclude(c => c.ProductImages));
-
+                .Include(c => c.Products.Where(p => p.IsVisibile))
+                .ThenInclude(p => p.ProductImages));
         }
     }
 }

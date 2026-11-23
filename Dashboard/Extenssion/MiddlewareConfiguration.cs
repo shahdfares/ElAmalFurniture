@@ -1,4 +1,5 @@
-﻿using ElAmal.Shared.Middleware;
+﻿using ElAmal.Core.Helper.Hubs;
+using ElAmal.Shared.Middleware;
 
 namespace Dashboard.Extenssion
 {
@@ -31,6 +32,8 @@ namespace Dashboard.Extenssion
             app.UseAuthorization();
 
             app.MapControllers();
+
+            app.MapHub<ProductHub>("/hubs/products");
 
             return app;
         }

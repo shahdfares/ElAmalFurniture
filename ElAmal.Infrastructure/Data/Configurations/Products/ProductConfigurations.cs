@@ -25,6 +25,9 @@ namespace ElAmal.Infrastructure.Data.Configurations.Products
             builder.Property(P => P.Code)
                 .HasMaxLength(100);
 
+            builder.Property(p => p.IsVisibile)
+               .HasDefaultValue(true);
+
 
             builder.HasOne(p => p.Category)
                .WithMany(c => c.Products)

@@ -11,6 +11,7 @@ namespace ElAmal.Core.Contract.Services.Products
         Task<ReturnResult<ProductToReturnDto>> AddAsync(ProductRequestDto productRequestDto);
         Task<ReturnResult<ProductToReturnDto>> UpdateAsync(Guid id, ProductRequestDto dto);
         Task<ReturnResult<bool>> DeleteAsync(Guid id);
+        Task<ReturnResult<bool>> UpdateVisibilityAsync(Guid id, ProductVisibilityDto request);
         Task<ReturnResult<bool>> DeleteImageAsync(Guid productId, Guid imageId);
         Task<ReturnResult<bool>> SetPrimaryImageAsync(Guid productId, Guid imageId);
 
