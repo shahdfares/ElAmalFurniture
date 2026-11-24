@@ -4,18 +4,37 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ElAmal.Infrastructure.Identity.Context;
 
 namespace ElAmal.Infrastructure.Data
 {
-    public class ElAmalContextInitializer (ElAmalDbContext _dbContext) : IElAmalContextInitializer
+    public class ElAmalContextInitializer(
+        ElAmalDbContext _dbContext,
+        ElAmalIdentityDbContext _identityDbContext
+)       : IElAmalContextInitializer
     {   
         public async Task UpdateDatabaseAsync()
-        {
-            var pendingMigrations = await _dbContext.Database.GetPendingMigrationsAsync();
+{
+    // Main Database Migration
+    var pendingMigrations = await _dbContext.Database
+        .GetPendingMigrationsAsync();
 
-            if (pendingMigrations.Any())
-                await _dbContext.Database.MigrateAsync();
-        }
+    if (pendingMigrations.Any())
+    {
+        await _dbContext.Database.MigrateAsync();
+        Console.WriteLine("[MIGRATION] Main database migrated successfully.");
+    }
+
+    // Identity Database Migration
+    var identityPendingMigrations = await _identityDbContext.Database
+        .GetPendingMigrationsAsync();
+
+    if (identityPendingMigrations.Any())
+    {
+        await _identityDbContext.Database.MigrateAsync();
+        Console.WriteLine("[MIGRATION] Identity database migrated successfully.");
+    }
+}
 
         public async Task SeedAsync(IServiceProvider serviceProvider, IConfiguration configuration)
         {
