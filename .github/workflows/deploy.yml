@@ -58,18 +58,18 @@ jobs:
       - name: Build Website Backend
         run: |
           docker build \
-            -f ElAmal/ElAmal/Dockerfile \
+            -f ElAmal/Dockerfile \
             -t ${{ env.ACR_LOGIN_SERVER }}/website-backend:latest \
             -t ${{ env.ACR_LOGIN_SERVER }}/website-backend:${{ github.sha }} \
-            ./ElAmal
+            .
 
       - name: Build Dashboard Backend
         run: |
           docker build \
-            -f ElAmal/Dashboard/Dockerfile \
+            -f Dashboard/Dockerfile \
             -t ${{ env.ACR_LOGIN_SERVER }}/dashboard-backend:latest \
             -t ${{ env.ACR_LOGIN_SERVER }}/dashboard-backend:${{ github.sha }} \
-            ./ElAmal
+            .
 
       - name: Push Website Backend
         run: |
@@ -80,6 +80,3 @@ jobs:
         run: |
           docker push ${{ env.ACR_LOGIN_SERVER }}/dashboard-backend:latest
           docker push ${{ env.ACR_LOGIN_SERVER }}/dashboard-backend:${{ github.sha }}
-#
-
-
